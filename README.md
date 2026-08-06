@@ -16,11 +16,11 @@ blowing out to white.
   <img src="Pokédex/preview-x3.png" width="330" alt="X3 preview" />
 </p>
 
-> The BMPs look washed-out in a desktop image viewer — that is intentional. The panel's four
-> ink states display far darker than their nominal palette values (perceived ≈15/30/80/210 vs
-> 0/85/170/255), so the files pre-brighten to compensate, matching the quantization used by
-> [crosspoint-pxc-converter](https://github.com/zgredex/crosspoint-pxc-converter) and the
-> firmware's own dither path. Judge them on the device, not in Preview.
+> Why pre-dithered? CrossInk/CrossPoint maps a BMP whose palette is exactly the four native
+> gray levels (`#000/#555/#AAA/#FFF`) **1:1 to panel states** — no re-quantization, no dithering
+> (`Bitmap.cpp` nativePalette path). Plain grayscale BMPs instead get hard-thresholded at
+> 45/70/140 with no error diffusion, which blows highlights out to white. These files carry the
+> dither baked in, so what you author is what the panel shows.
 
 ## Downloading a folder as a zip
 
@@ -47,8 +47,8 @@ BMP loader expects; no further conversion needed.
 
 - X4: 480×800 · X3: 528×792, both portrait
 - 4 bpp indexed, palette `#000000 #555555 #AAAAAA #FFFFFF`, `biClrUsed=4`, negative-height (top-down) `BITMAPINFOHEADER`
-- Floyd–Steinberg error diffusion, bin thresholds 30/50/140, error diffused against the panel's
-  perceived levels 15/30/80/210 (CrossPoint `master` quantization profile)
+- Floyd–Steinberg error diffusion against the native levels 0/85/170/255 (midpoint
+  thresholds 43/128/213); the firmware displays palette indices 1:1, so no further processing occurs
 - Rendered from a live [Tesserae](https://github.com/dmellok) canvas driven by
   [PokéAPI](https://pokeapi.co) data — sprites, stats, dex entries and habitats are the real
   Gen-I data set

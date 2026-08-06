@@ -43,12 +43,23 @@ GitHub can't zip a single folder from the web UI, so either:
 Files are 4-bit indexed BMPs (four-gray palette, top-down rows) — the exact layout the stock
 BMP loader expects; no further conversion needed.
 
+## Test cards
+
+[`test-cards/`](test-cards) holds diagnostic BMPs for verifying the firmware's 4-level grayscale
+sleep-screen pipeline: the top half is four solid vertical bands, one per native gray level
+(palette-native 4-bit files, so the firmware maps them 1:1 with no dithering). A healthy unit
+shows four distinct bands; if the two middle bands render black (or the panel wipes to white),
+the multi-pass grayscale refresh is not running correctly — see
+[crosspoint-reader#2879](https://github.com/crosspoint-reader/crosspoint-reader/issues/2879).
+
 ## Format details
 
 - X4: 480×800 · X3: 528×792, both portrait
 - 4 bpp indexed, palette `#000000 #555555 #AAAAAA #FFFFFF`, `biClrUsed=4`, negative-height (top-down) `BITMAPINFOHEADER`
-- Floyd–Steinberg error diffusion against the native levels 0/85/170/255 (midpoint
-  thresholds 43/128/213); the firmware displays palette indices 1:1, so no further processing occurs
+- Floyd–Steinberg error diffusion against display levels 10/49/111/225 (thresholds 29/80/168),
+  tuned by on-device A/B on real hardware — the panel's two gray states render far darker than
+  their nominal palette values, so files must pre-brighten midtones to read correctly. The
+  firmware displays these palette indices 1:1 with no further processing
 - Rendered from a live [Tesserae](https://github.com/dmellok) canvas driven by
   [PokéAPI](https://pokeapi.co) data — sprites, stats, dex entries and habitats are the real
   Gen-I data set

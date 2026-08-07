@@ -1,8 +1,20 @@
-# xteink-screens
+# eink-screens
 
-Sleep-screen wallpapers for the **Xteink X3** and **Xteink X4** e-readers, pre-dithered for
-CrossPoint / CrossInk firmware so grayscale shading renders correctly on the panel instead of
-blowing out to white.
+Sleep-screen wallpapers for e-ink readers, rendered at each panel's native geometry.
+
+## Devices
+
+| Device | Panel | Format |
+| --- | --- | --- |
+| Xteink X4 | 480×800, 4-level grey | 4-bit BMP, dither baked in |
+| Xteink X3 | 528×792, 4-level grey | 4-bit BMP, dither baked in |
+| Kindle Paperwhite (11th gen) | 1236×1648, 16-level grey | 8-bit greyscale PNG |
+
+The Xteink files are pre-dithered because CrossInk/CrossPoint maps a BMP whose palette is exactly
+the four native grey levels (`#000/#555/#AAA/#FFF`) **1:1 to panel states** — no re-quantization,
+no dithering (`Bitmap.cpp` nativePalette path). Plain greyscale BMPs instead get hard-thresholded
+at 45/70/140 with no error diffusion, which blows highlights out to white. The Kindle files are
+*not* pre-dithered: that panel has 16 levels and renders greyscale PNGs perfectly well on its own.
 
 ## What's here
 
@@ -10,6 +22,7 @@ blowing out to white.
 | --- | --- |
 | [`Pokédex/x4`](Pokédex/x4) | All 151 original Kanto Pokémon as 480×800 data-sheet screens for the X4 |
 | [`Pokédex/x3`](Pokédex/x3) | The same 151 screens at 528×792 for the X3 |
+| [`Pokédex/kindle-pw`](Pokédex/kindle-pw) | The same 151 at 1236×1648, expanded for the Paperwhite (see below) |
 | [`Constellations/x4`](Constellations/x4) | All 88 IAU constellations as 480×800 star-chart plates for the X4 |
 | [`Constellations/x3`](Constellations/x3) | The same 88 plates at 528×792 for the X3 |
 | [`Magic/x4`](Magic/x4) | 104 iconic Magic: The Gathering cards as 480×800 card facsimiles for the X4 |
@@ -20,37 +33,50 @@ blowing out to white.
   <img src="Pokédex/preview-x3.png" width="330" alt="X3 preview" />
 </p>
 <p align="center">
+  <img src="Pokédex/preview-kindle-pw.png" width="640" alt="Kindle Paperwhite Pokédex plates" />
+</p>
+<p align="center">
   <img src="Constellations/preview-x4.png" width="640" alt="Constellation plates" />
 </p>
 <p align="center">
   <img src="Magic/preview-x4.png" width="640" alt="Magic card plates" />
 </p>
 
-> Why pre-dithered? CrossInk/CrossPoint maps a BMP whose palette is exactly the four native
-> gray levels (`#000/#555/#AAA/#FFF`) **1:1 to panel states** — no re-quantization, no dithering
-> (`Bitmap.cpp` nativePalette path). Plain grayscale BMPs instead get hard-thresholded at
-> 45/70/140 with no error diffusion, which blows highlights out to white. These files carry the
-> dither baked in, so what you author is what the panel shows.
+### The Paperwhite Pokédex is a different layout
+
+It is not the X3/X4 sheet upscaled. The Paperwhite has roughly 5× the pixels, so the extra room
+carries extra data rather than larger type — the type is scaled about 2×, not 2.6×, because at
+300 ppi a straight pixel-for-pixel scale would leave the glyphs physically enormous. Added over
+the Xteink version: the evolution chain with sprites and conditions, the Red/Blue level-up
+learnset, breeding data (egg groups, hatch cycles, gender ratio, EV yield), habitat, growth rate,
+base friendship, and a computed type-matchup panel.
+
+That matchup panel uses the **Generation I** type chart, not the modern one, to match the Kanto
+roster and the Red/Blue learnset beside it. It is derived from PokéAPI's `past_damage_relations`
+rather than transcribed, so Ghost deals 0 to Psychic, and Bug and Poison hit each other for 2×.
 
 ## Downloading a folder as a zip
 
 GitHub can't zip a single folder from the web UI, so either:
 
-1. **Releases (easiest):** grab `pokedex-x4.zip` / `pokedex-x3.zip`,
+1. **Releases (easiest):** grab `pokedex-x4.zip` / `pokedex-x3.zip` / `pokedex-kindle-pw.zip`,
    `constellations-x4.zip` / `constellations-x3.zip`, or
    `magic-x4.zip` / `magic-x3.zip` from the
    [releases page](../../releases) — these are pre-zipped copies of each folder.
 2. **download-directory:** paste a folder URL into <https://download-directory.github.io>, or use
    these direct links:
-   - [Download Pokédex/x4 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Fxteink-screens%2Ftree%2Fmain%2FPok%C3%A9dex%2Fx4)
-   - [Download Pokédex/x3 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Fxteink-screens%2Ftree%2Fmain%2FPok%C3%A9dex%2Fx3)
-   - [Download Constellations/x4 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Fxteink-screens%2Ftree%2Fmain%2FConstellations%2Fx4)
-   - [Download Constellations/x3 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Fxteink-screens%2Ftree%2Fmain%2FConstellations%2Fx3)
-   - [Download Magic/x4 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Fxteink-screens%2Ftree%2Fmain%2FMagic%2Fx4)
-   - [Download Magic/x3 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Fxteink-screens%2Ftree%2Fmain%2FMagic%2Fx3)
-3. **Whole repo:** Code → Download ZIP (includes both folders).
+   - [Download Pokédex/x4 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FPok%C3%A9dex%2Fx4)
+   - [Download Pokédex/x3 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FPok%C3%A9dex%2Fx3)
+   - [Download Pokédex/kindle-pw as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FPok%C3%A9dex%2Fkindle-pw)
+   - [Download Constellations/x4 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FConstellations%2Fx4)
+   - [Download Constellations/x3 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FConstellations%2Fx3)
+   - [Download Magic/x4 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FMagic%2Fx4)
+   - [Download Magic/x3 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FMagic%2Fx3)
+3. **Whole repo:** Code → Download ZIP (includes every folder).
 
 ## Installing on the device
+
+### Xteink X3 / X4
 
 1. Copy the `.bmp` files you want onto the device (USB mass storage).
 2. On the device, open a file in **Browse Files** — the built-in BMP viewer displays it.
@@ -58,6 +84,15 @@ GitHub can't zip a single folder from the web UI, so either:
 
 Files are 4-bit indexed BMPs (four-gray palette, top-down rows) — the exact layout the stock
 BMP loader expects; no further conversion needed.
+
+### Kindle Paperwhite
+
+Replacing the Kindle's sleep screen requires a **jailbroken** device — there is no stock way to
+set a custom screensaver. With a jailbreak and a screensaver hack installed, copy the `.png`
+files into the hack's screensaver folder.
+
+On a stock Kindle these still work as ordinary images: side-load them into `documents/`, or bind
+them into a PDF or CBZ and page through the set. They just won't become the lockscreen.
 
 ## Test cards
 
@@ -70,6 +105,8 @@ the multi-pass grayscale refresh is not running correctly — see
 
 ## Format details
 
+### Xteink (BMP)
+
 - X4: 480×800 · X3: 528×792, both portrait
 - 4 bpp indexed, palette `#000000 #555555 #AAAAAA #FFFFFF`, `biClrUsed=4`, negative-height (top-down) `BITMAPINFOHEADER`
 - Floyd–Steinberg error diffusion against the **nominal** levels 0/85/170/255 (thresholds
@@ -78,7 +115,13 @@ the multi-pass grayscale refresh is not running correctly — see
   so no midtone pre-brightening is wanted. (An earlier revision of this file described
   pre-compensated levels 10/49/111/225; that approach blew out highlights and was dropped in
   331b60b, but the note was left behind. The committed BMPs have always used the nominal ramp.)
-- Rendered from live [Tesserae](https://github.com/dmellok) canvases
+
+### Kindle Paperwhite (PNG)
+
+- 1236×1648 portrait (11th gen, 6.8"). A 12th-gen 1264×1680 panel would need a re-render.
+- 8-bit greyscale PNG, no dithering applied — the 16-level panel handles greyscale itself.
+
+Both are rendered from live [Tesserae](https://github.com/dmellok) canvases.
 
 ### Sources
 

@@ -10,10 +10,15 @@ blowing out to white.
 | --- | --- |
 | [`Pokédex/x4`](Pokédex/x4) | All 151 original Kanto Pokémon as 480×800 data-sheet screens for the X4 |
 | [`Pokédex/x3`](Pokédex/x3) | The same 151 screens at 528×792 for the X3 |
+| [`Constellations/x4`](Constellations/x4) | All 88 IAU constellations as 480×800 star-chart plates for the X4 |
+| [`Constellations/x3`](Constellations/x3) | The same 88 plates at 528×792 for the X3 |
 
 <p align="center">
   <img src="Pokédex/preview-x4.png" width="300" alt="X4 preview" />
   <img src="Pokédex/preview-x3.png" width="330" alt="X3 preview" />
+</p>
+<p align="center">
+  <img src="Constellations/preview-x4.png" width="640" alt="Constellation plates" />
 </p>
 
 > Why pre-dithered? CrossInk/CrossPoint maps a BMP whose palette is exactly the four native
@@ -26,12 +31,15 @@ blowing out to white.
 
 GitHub can't zip a single folder from the web UI, so either:
 
-1. **Releases (easiest):** grab `pokedex-x4.zip` or `pokedex-x3.zip` from the
-   [latest release](../../releases/latest) — these are pre-zipped copies of each folder.
+1. **Releases (easiest):** grab `pokedex-x4.zip` / `pokedex-x3.zip` or
+   `constellations-x4.zip` / `constellations-x3.zip` from the
+   [releases page](../../releases) — these are pre-zipped copies of each folder.
 2. **download-directory:** paste a folder URL into <https://download-directory.github.io>, or use
    these direct links:
    - [Download Pokédex/x4 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Fxteink-screens%2Ftree%2Fmain%2FPok%C3%A9dex%2Fx4)
    - [Download Pokédex/x3 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Fxteink-screens%2Ftree%2Fmain%2FPok%C3%A9dex%2Fx3)
+   - [Download Constellations/x4 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Fxteink-screens%2Ftree%2Fmain%2FConstellations%2Fx4)
+   - [Download Constellations/x3 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Fxteink-screens%2Ftree%2Fmain%2FConstellations%2Fx3)
 3. **Whole repo:** Code → Download ZIP (includes both folders).
 
 ## Installing on the device
@@ -56,13 +64,31 @@ the multi-pass grayscale refresh is not running correctly — see
 
 - X4: 480×800 · X3: 528×792, both portrait
 - 4 bpp indexed, palette `#000000 #555555 #AAAAAA #FFFFFF`, `biClrUsed=4`, negative-height (top-down) `BITMAPINFOHEADER`
-- Floyd–Steinberg error diffusion against display levels 10/49/111/225 (thresholds 29/80/168),
-  tuned by on-device A/B on real hardware — the panel's two gray states render far darker than
-  their nominal palette values, so files must pre-brighten midtones to read correctly. The
-  firmware displays these palette indices 1:1 with no further processing
-- Rendered from a live [Tesserae](https://github.com/dmellok) canvas driven by
-  [PokéAPI](https://pokeapi.co) data — sprites, stats, dex entries and habitats are the real
-  Gen-I data set
+- Floyd–Steinberg error diffusion against the **nominal** levels 0/85/170/255 (thresholds
+  43/128/213). Because the palette is native, the firmware maps each index straight to a panel
+  state and its gray composite renders the two middle states at their proper visible levels —
+  so no midtone pre-brightening is wanted. (An earlier revision of this file described
+  pre-compensated levels 10/49/111/225; that approach blew out highlights and was dropped in
+  331b60b, but the note was left behind. The committed BMPs have always used the nominal ramp.)
+- Rendered from live [Tesserae](https://github.com/dmellok) canvases
 
-Pokémon and Pokémon character names are trademarks of Nintendo. Sprite and dex data via PokéAPI;
-this is a fan-made, non-commercial project.
+### Sources
+
+- **Pokédex** — [PokéAPI](https://pokeapi.co): sprites, base stats, dex entries and habitats are
+  the real Gen-I data set. Pokémon and Pokémon character names are trademarks of Nintendo; this is
+  a fan-made, non-commercial project.
+- **Constellations** — stars from the [HYG database](https://github.com/astronexus/HYG-Database)
+  v4.1 (CC BY-SA) filtered to magnitude ≤6.5, Messier objects from its deep-sky companion
+  catalogue, and stick figures plus IAU boundaries from
+  [d3-celestial](https://github.com/ofrohn/d3-celestial) (BSD-3). Areas, culmination months and
+  visibility limits are computed from that geometry, not copied — the spherical-polygon areas
+  agree with the published IAU values (Orion 594.1, Crux 68.5, Hydra 1302.5 deg²).
+
+### What's on a constellation plate
+
+Stereographic projection centred on the constellation, north up and east left. Stars are sized by
+magnitude; Messier objects use the conventional symbols. The oval top-right is an all-sky Hammer
+projection locating the constellation against the celestial equator (solid) and the ecliptic
+(dashed). The globe bottom-right shades the band of Earth latitudes from which the entire figure
+clears the horizon at some point in the year — nothing on these plates is tied to one observing
+site.

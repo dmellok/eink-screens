@@ -12,6 +12,8 @@ blowing out to white.
 | [`Pokédex/x3`](Pokédex/x3) | The same 151 screens at 528×792 for the X3 |
 | [`Constellations/x4`](Constellations/x4) | All 88 IAU constellations as 480×800 star-chart plates for the X4 |
 | [`Constellations/x3`](Constellations/x3) | The same 88 plates at 528×792 for the X3 |
+| [`Magic/x4`](Magic/x4) | 104 iconic Magic: The Gathering cards as 480×800 card facsimiles for the X4 |
+| [`Magic/x3`](Magic/x3) | The same 104 cards at 528×792 for the X3 |
 
 <p align="center">
   <img src="Pokédex/preview-x4.png" width="300" alt="X4 preview" />
@@ -19,6 +21,9 @@ blowing out to white.
 </p>
 <p align="center">
   <img src="Constellations/preview-x4.png" width="640" alt="Constellation plates" />
+</p>
+<p align="center">
+  <img src="Magic/preview-x4.png" width="640" alt="Magic card plates" />
 </p>
 
 > Why pre-dithered? CrossInk/CrossPoint maps a BMP whose palette is exactly the four native
@@ -31,8 +36,9 @@ blowing out to white.
 
 GitHub can't zip a single folder from the web UI, so either:
 
-1. **Releases (easiest):** grab `pokedex-x4.zip` / `pokedex-x3.zip` or
-   `constellations-x4.zip` / `constellations-x3.zip` from the
+1. **Releases (easiest):** grab `pokedex-x4.zip` / `pokedex-x3.zip`,
+   `constellations-x4.zip` / `constellations-x3.zip`, or
+   `magic-x4.zip` / `magic-x3.zip` from the
    [releases page](../../releases) — these are pre-zipped copies of each folder.
 2. **download-directory:** paste a folder URL into <https://download-directory.github.io>, or use
    these direct links:
@@ -40,6 +46,8 @@ GitHub can't zip a single folder from the web UI, so either:
    - [Download Pokédex/x3 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Fxteink-screens%2Ftree%2Fmain%2FPok%C3%A9dex%2Fx3)
    - [Download Constellations/x4 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Fxteink-screens%2Ftree%2Fmain%2FConstellations%2Fx4)
    - [Download Constellations/x3 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Fxteink-screens%2Ftree%2Fmain%2FConstellations%2Fx3)
+   - [Download Magic/x4 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Fxteink-screens%2Ftree%2Fmain%2FMagic%2Fx4)
+   - [Download Magic/x3 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Fxteink-screens%2Ftree%2Fmain%2FMagic%2Fx3)
 3. **Whole repo:** Code → Download ZIP (includes both folders).
 
 ## Installing on the device
@@ -83,6 +91,25 @@ the multi-pass grayscale refresh is not running correctly — see
   [d3-celestial](https://github.com/ofrohn/d3-celestial) (BSD-3). Areas, culmination months and
   visibility limits are computed from that geometry, not copied — the spherical-polygon areas
   agree with the published IAU values (Orion 594.1, Crux 68.5, Hydra 1302.5 deg²).
+- **Magic** — card data, art crops, set symbols and mana symbols from the
+  [Scryfall API](https://scryfall.com/docs/api) (card data is CC0; card images and artwork remain
+  © Wizards of the Coast and their respective artists). Each card is pinned to a specific
+  printing so the original art is used — Christopher Rush's Black Lotus rather than a modern
+  reprint. Every plate credits its illustrator. Magic: The Gathering is a trademark of Wizards of
+  the Coast LLC; this is a fan-made, non-commercial project and is not affiliated with or
+  endorsed by Wizards of the Coast or Scryfall.
+
+### What's on a Magic plate
+
+A facsimile of the card itself, proportioned for the panel: title bar with mana cost, art window,
+type line with the set symbol, rules text box with reminder text italicised, and the illustrator
+credit, set code and plate number along the bottom. Power/toughness or starting loyalty sits in
+the corner box where the real card puts it.
+
+Colour identity is carried by the **shape** of each mana symbol rather than its tone — five
+colours don't fit into four grey levels, so the flame, droplet, skull, sun and tree glyphs do the
+distinguishing, with the disc behind them shaded only light-to-dark. Rules text is auto-fitted per
+card, since a Black Lotus and an Urza's Saga differ by a factor of sixty in word count.
 
 ### What's on a constellation plate
 

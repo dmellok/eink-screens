@@ -27,6 +27,8 @@ at 45/70/140 with no error diffusion, which blows highlights out to white. The K
 | [`Constellations/x3`](Constellations/x3) | The same 88 plates at 528×792 for the X3 |
 | [`Magic/x4`](Magic/x4) | 104 iconic Magic: The Gathering cards as 480×800 card facsimiles for the X4 |
 | [`Magic/x3`](Magic/x3) | The same 104 cards at 528×792 for the X3 |
+| [`SCP/x4`](SCP/x4) | Top 100 SCP Foundation articles as 480×800 file plates for the X4 |
+| [`SCP/x3`](SCP/x3) | The same 100 plates at 528×792 for the X3 |
 
 <p align="center">
   <img src="Pokédex/preview-x4.png" width="300" alt="X4 preview" />
@@ -40,6 +42,9 @@ at 45/70/140 with no error diffusion, which blows highlights out to white. The K
 </p>
 <p align="center">
   <img src="Magic/preview-x4.png" width="640" alt="Magic card plates" />
+</p>
+<p align="center">
+  <img src="SCP/preview-x4.png" width="640" alt="SCP file plates" />
 </p>
 
 ### The Paperwhite Pokédex is a different layout
@@ -61,7 +66,7 @@ GitHub can't zip a single folder from the web UI, so either:
 
 1. **Releases (easiest):** grab `pokedex-x4.zip` / `pokedex-x3.zip` / `pokedex-kindle-pw.zip`,
    `constellations-x4.zip` / `constellations-x3.zip`, or
-   `magic-x4.zip` / `magic-x3.zip` from the
+   `magic-x4.zip` / `magic-x3.zip`, or `scp-x4.zip` / `scp-x3.zip` from the
    [releases page](../../releases) — these are pre-zipped copies of each folder.
 2. **download-directory:** paste a folder URL into <https://download-directory.github.io>, or use
    these direct links:
@@ -72,6 +77,8 @@ GitHub can't zip a single folder from the web UI, so either:
    - [Download Constellations/x3 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FConstellations%2Fx3)
    - [Download Magic/x4 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FMagic%2Fx4)
    - [Download Magic/x3 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FMagic%2Fx3)
+   - [Download SCP/x4 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FSCP%2Fx4)
+   - [Download SCP/x3 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FSCP%2Fx3)
 3. **Whole repo:** Code → Download ZIP (includes every folder).
 
 ## Installing on the device
@@ -141,6 +148,28 @@ Both are rendered from live [Tesserae](https://github.com/dmellok) canvases.
   reprint. Every plate credits its illustrator. Magic: The Gathering is a trademark of Wizards of
   the Coast LLC; this is a fan-made, non-commercial project and is not affiliated with or
   endorsed by Wizards of the Coast or Scryfall.
+- **SCP** — articles from the [SCP Wiki](https://scp-wiki.wikidot.com), all **CC BY-SA 3.0**.
+  Ranking, tags and article text come from the [scp-data](https://scp-data.tedivm.com) dump;
+  titles are scraped from the wiki's series indexes. Because the source is share-alike, the
+  plates in [`SCP/`](SCP) are **also CC BY-SA 3.0** — see
+  [`SCP/ATTRIBUTION.md`](SCP/ATTRIBUTION.md) for the full author list, per-image licences and
+  the content exclusions. The Foundation emblem is from
+  [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:SCP_Foundation_(emblem).svg)
+  (CC BY-SA); the property icons are [Phosphor](https://phosphoricons.com) (MIT).
+
+### What's on an SCP plate
+
+Item number, object class with a Safe→Apollyon containment scale, up to four property icons
+derived from the article's own wiki tags, a photographic record where one is available under an
+open licence, and an extract from the containment procedures and description. Author and licence
+are credited on every plate.
+
+Redaction on the extract is **applied by this project, not copied from the source** — roughly
+one word in ten, weighted toward figures, sites and proper nouns. Genuine `█` runs written by
+article authors are preserved separately.
+
+The set is the top 100 by community rating, with six entries skipped on content grounds and
+backfilled from below the cut; the exclusions and reasons are listed in the attribution file.
 
 ### What's on a Magic plate
 

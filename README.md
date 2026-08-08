@@ -9,6 +9,7 @@ Sleep-screen wallpapers for e-ink readers, rendered at each panel's native geome
 | Xteink X4 | 480×800, 4-level grey | 4-bit BMP, dither baked in |
 | Xteink X3 | 528×792, 4-level grey | 4-bit BMP, dither baked in |
 | Kindle Paperwhite (11th gen) | 1236×1648, 16-level grey | 8-bit greyscale PNG |
+| Kindle Scribe | 1860×2480, 16-level grey | 8-bit greyscale PNG |
 | Kindle Oasis / Paperwhite (12th gen) | 1264×1680, 16-level grey | 8-bit greyscale PNG |
 | Kindle Paperwhite (1st/2nd gen) | 758×1024, 16-level grey | 8-bit greyscale PNG |
 | Kindle (basic, 6") and similar | 600×800, 16-level grey | 8-bit greyscale PNG |
@@ -27,6 +28,7 @@ at 45/70/140 with no error diffusion, which blows highlights out to white. The K
 | [`Pokédex/x4`](Pokédex/x4) | All 151 original Kanto Pokémon as 480×800 data-sheet screens for the X4 |
 | [`Pokédex/x3`](Pokédex/x3) | The same 151 screens at 528×792 for the X3 |
 | [`Pokédex/kindle-pw`](Pokédex/kindle-pw) | The same 151 at 1236×1648, expanded for the Paperwhite (see below) |
+| [`Pokédex/kindle-scribe`](Pokédex/kindle-scribe) | The same 151 at 1860×2480, expanded again for the Scribe (see below) |
 | [`Pokédex/kindle-oasis-pw12`](Pokédex/kindle-oasis-pw12) | The same expanded layout at 1264×1680 (Oasis, 12th-gen Paperwhite) |
 | [`Pokédex/kindle-pw2`](Pokédex/kindle-pw2) | The same expanded layout at 758×1024 (1st/2nd-gen Paperwhite) |
 | [`Pokédex/kobo-libra-colour`](Pokédex/kobo-libra-colour) | 1264×1680 **in colour**, red Pokédex shell, for the Kobo Libra Colour |
@@ -77,6 +79,25 @@ layout from the Xteink sets instead. It keeps the sprite, base stats, height/wei
 catch rate and the dex entry, and drops the learnset, type matchup, breeding block and evolution
 chain. Everything on it is readable at 167 ppi, which the shrunken full layout was not.
 
+### The Scribe goes one step further again
+
+`kindle-scribe` stands in the same relation to the Paperwhite sheet that the Paperwhite does to
+the Xteink one. Both panels are 300 ppi, so scaling the 1236×1648 layout up to 1860×2480 would
+not sharpen anything — it would just make every glyph physically 1.5× larger. Instead the type
+sizes, borders and sprite dimensions are carried over **unchanged**, and the surplus 624×832 px
+holds new panels:
+
+- **Field illustration** — the official artwork, which the Paperwhite sheet has no room for and
+  never uses, beside the pixel sprite rather than replacing it.
+- **Attacking matchup** — the same Generation I chart read in the other direction. The Paperwhite
+  only scores the Pokémon defensively; this adds what its own types do to each defender, taking
+  the better of the two for a dual-type (i.e. the STAB move you would actually reach for).
+- **The complete Red/Blue learnset** — the Paperwhite sheet caps the list at ten moves for space.
+- **Scale** — height against a 1.7 m trainer, which is how you find out Onix is 8.8 m.
+
+The matchup row is sized off Onix, which carries more chips than any other Kanto species (five
+weaknesses, five resistances and an immunity), so nothing overflows anywhere else.
+
 ### The Kobo set is in colour
 
 `kobo-libra-colour` is the only colour set here. The Libra Colour's Kaleido 3 panel renders
@@ -99,6 +120,7 @@ GitHub can't zip a single folder from the web UI, so either:
    - [Download Pokédex/x4 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FPok%C3%A9dex%2Fx4)
    - [Download Pokédex/x3 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FPok%C3%A9dex%2Fx3)
    - [Download Pokédex/kindle-pw as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FPok%C3%A9dex%2Fkindle-pw)
+   - [Download Pokédex/kindle-scribe as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FPok%C3%A9dex%2Fkindle-scribe)
    - [Download Pokédex/kindle-oasis-pw12 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FPok%C3%A9dex%2Fkindle-oasis-pw12)
    - [Download Pokédex/kindle-pw2 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FPok%C3%A9dex%2Fkindle-pw2)
    - [Download Pokédex/kindle-6in as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FPok%C3%A9dex%2Fkindle-6in)
@@ -122,7 +144,7 @@ GitHub can't zip a single folder from the web UI, so either:
 Files are 4-bit indexed BMPs (four-gray palette, top-down rows) — the exact layout the stock
 BMP loader expects; no further conversion needed.
 
-### Kindle Paperwhite
+### Kindle Paperwhite / Scribe
 
 Replacing the Kindle's sleep screen requires a **jailbroken** device — there is no stock way to
 set a custom screensaver. With a jailbreak and a screensaver hack installed, copy the `.png`
@@ -161,8 +183,9 @@ the multi-pass grayscale refresh is not running correctly — see
 
 ### Kindle Paperwhite (PNG)
 
-- 1236×1648 (Paperwhite 11th gen), 1264×1680 (Oasis, Paperwhite 12th gen, Kobo Libra Colour),
-  758×1024 (Paperwhite 1st/2nd gen) and 600×800 (basic 6" panels), all portrait.
+- 1860×2480 (Scribe), 1236×1648 (Paperwhite 11th gen), 1264×1680 (Oasis, Paperwhite 12th gen,
+  Kobo Libra Colour), 758×1024 (Paperwhite 1st/2nd gen) and 600×800 (basic 6" panels), all
+  portrait.
 - 8-bit greyscale PNG, no dithering applied — these panels have 16 levels and handle greyscale
   themselves. The Kobo Libra Colour set is RGB PNG.
 

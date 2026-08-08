@@ -90,12 +90,10 @@ crisp. Sprites are full colour rather than the greyscale treatment the mono sets
 
 GitHub can't zip a single folder from the web UI, so either:
 
-1. **Releases (easiest):** grab `pokedex-x4.zip` / `pokedex-x3.zip` / `pokedex-kindle-pw.zip` /
-   `pokedex-kindle-oasis-pw12.zip` / `pokedex-kindle-pw2.zip` / `pokedex-kindle-6in.zip` /
-   `pokedex-kobo-libra-colour.zip`,
-   `constellations-x4.zip` / `constellations-x3.zip`, or
-   `magic-x4.zip` / `magic-x3.zip`, or `scp-x4.zip` / `scp-x3.zip` from the
-   [releases page](../../releases) — these are pre-zipped copies of each folder.
+1. **Releases (easiest):** every set is pre-zipped on the [releases page](../../releases).
+   The Pokédex lives in one place, [Pokédex v2.0](../../releases/tag/pokedex-v2.0), with a zip
+   per panel size; the other sets have a release each
+   (`constellations-*`, `magic-*`, `scp-*`).
 2. **download-directory:** paste a folder URL into <https://download-directory.github.io>, or use
    these direct links:
    - [Download Pokédex/x4 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FPok%C3%A9dex%2Fx4)

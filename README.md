@@ -9,6 +9,10 @@ Sleep-screen wallpapers for e-ink readers, rendered at each panel's native geome
 | Xteink X4 | 480×800, 4-level grey | 4-bit BMP, dither baked in |
 | Xteink X3 | 528×792, 4-level grey | 4-bit BMP, dither baked in |
 | Kindle Paperwhite (11th gen) | 1236×1648, 16-level grey | 8-bit greyscale PNG |
+| Kindle Oasis / Paperwhite (12th gen) | 1264×1680, 16-level grey | 8-bit greyscale PNG |
+| Kindle Paperwhite (1st/2nd gen) | 758×1024, 16-level grey | 8-bit greyscale PNG |
+| Kindle (basic, 6") and similar | 600×800, 16-level grey | 8-bit greyscale PNG |
+| Kobo Libra Colour | 1264×1680, Kaleido 3 colour | **colour** PNG |
 
 The Xteink files are pre-dithered because CrossInk/CrossPoint maps a BMP whose palette is exactly
 the four native grey levels (`#000/#555/#AAA/#FFF`) **1:1 to panel states** — no re-quantization,
@@ -23,6 +27,10 @@ at 45/70/140 with no error diffusion, which blows highlights out to white. The K
 | [`Pokédex/x4`](Pokédex/x4) | All 151 original Kanto Pokémon as 480×800 data-sheet screens for the X4 |
 | [`Pokédex/x3`](Pokédex/x3) | The same 151 screens at 528×792 for the X3 |
 | [`Pokédex/kindle-pw`](Pokédex/kindle-pw) | The same 151 at 1236×1648, expanded for the Paperwhite (see below) |
+| [`Pokédex/kindle-oasis-pw12`](Pokédex/kindle-oasis-pw12) | The same expanded layout at 1264×1680 (Oasis, 12th-gen Paperwhite) |
+| [`Pokédex/kindle-pw2`](Pokédex/kindle-pw2) | The same expanded layout at 758×1024 (1st/2nd-gen Paperwhite) |
+| [`Pokédex/kobo-libra-colour`](Pokédex/kobo-libra-colour) | 1264×1680 **in colour**, red Pokédex shell, for the Kobo Libra Colour |
+| [`Pokédex/kindle-6in`](Pokédex/kindle-6in) | 600×800, reduced layout for small 6" panels (see below) |
 | [`Constellations/x4`](Constellations/x4) | All 88 IAU constellations as 480×800 star-chart plates for the X4 |
 | [`Constellations/x3`](Constellations/x3) | The same 88 plates at 528×792 for the X3 |
 | [`Magic/x4`](Magic/x4) | 104 iconic Magic: The Gathering cards as 480×800 card facsimiles for the X4 |
@@ -36,6 +44,9 @@ at 45/70/140 with no error diffusion, which blows highlights out to white. The K
 </p>
 <p align="center">
   <img src="Pokédex/preview-kindle-pw.png" width="640" alt="Kindle Paperwhite Pokédex plates" />
+</p>
+<p align="center">
+  <img src="Pokédex/preview-kobo-libra-colour.png" width="640" alt="Kobo Libra Colour Pokédex plates" />
 </p>
 <p align="center">
   <img src="Constellations/preview-x4.png" width="640" alt="Constellation plates" />
@@ -60,11 +71,28 @@ That matchup panel uses the **Generation I** type chart, not the modern one, to 
 roster and the Red/Blue learnset beside it. It is derived from PokéAPI's `past_damage_relations`
 rather than transcribed, so Ghost deals 0 to Psychic, and Bug and Poison hit each other for 2×.
 
+The same expanded layout is also rendered at 1264×1680 and 758×1024. **600×800 is different**:
+that panel is too small to carry the dense panels legibly, so `kindle-6in` uses the compact
+layout from the Xteink sets instead. It keeps the sprite, base stats, height/weight/experience/
+catch rate and the dex entry, and drops the learnset, type matchup, breeding block and evolution
+chain. Everything on it is readable at 167 ppi, which the shrunken full layout was not.
+
+### The Kobo set is in colour
+
+`kobo-libra-colour` is the only colour set here. The Libra Colour's Kaleido 3 panel renders
+colour at 150 ppi but black and white at the full 300 ppi, and desaturates noticeably, so colour
+is used on large blocks — the red Pokédex shell, type badges in their official type colours, stat
+bars in the primary type colour, and matchup chips coded red for weaknesses, green for
+resistances and grey for immunity. Body text stays black on white, where the panel keeps it
+crisp. Sprites are full colour rather than the greyscale treatment the mono sets use.
+
 ## Downloading a folder as a zip
 
 GitHub can't zip a single folder from the web UI, so either:
 
-1. **Releases (easiest):** grab `pokedex-x4.zip` / `pokedex-x3.zip` / `pokedex-kindle-pw.zip`,
+1. **Releases (easiest):** grab `pokedex-x4.zip` / `pokedex-x3.zip` / `pokedex-kindle-pw.zip` /
+   `pokedex-kindle-oasis-pw12.zip` / `pokedex-kindle-pw2.zip` / `pokedex-kindle-6in.zip` /
+   `pokedex-kobo-libra-colour.zip`,
    `constellations-x4.zip` / `constellations-x3.zip`, or
    `magic-x4.zip` / `magic-x3.zip`, or `scp-x4.zip` / `scp-x3.zip` from the
    [releases page](../../releases) — these are pre-zipped copies of each folder.
@@ -73,6 +101,10 @@ GitHub can't zip a single folder from the web UI, so either:
    - [Download Pokédex/x4 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FPok%C3%A9dex%2Fx4)
    - [Download Pokédex/x3 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FPok%C3%A9dex%2Fx3)
    - [Download Pokédex/kindle-pw as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FPok%C3%A9dex%2Fkindle-pw)
+   - [Download Pokédex/kindle-oasis-pw12 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FPok%C3%A9dex%2Fkindle-oasis-pw12)
+   - [Download Pokédex/kindle-pw2 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FPok%C3%A9dex%2Fkindle-pw2)
+   - [Download Pokédex/kindle-6in as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FPok%C3%A9dex%2Fkindle-6in)
+   - [Download Pokédex/kobo-libra-colour as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FPok%C3%A9dex%2Fkobo-libra-colour)
    - [Download Constellations/x4 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FConstellations%2Fx4)
    - [Download Constellations/x3 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FConstellations%2Fx3)
    - [Download Magic/x4 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FMagic%2Fx4)
@@ -101,6 +133,12 @@ files into the hack's screensaver folder.
 On a stock Kindle these still work as ordinary images: side-load them into `documents/`, or bind
 them into a PDF or CBZ and page through the set. They just won't become the lockscreen.
 
+### KOReader (Kobo, Kindle, and others)
+
+KOReader can show a random image from a folder as its sleep screen, which is the easiest way to
+use these. Copy the PNGs to the device, then set **gear icon → Screen → Sleep screen** (called
+*Screensaver* on older builds) to show a random image from a folder, and point it at that folder.
+
 ## Test cards
 
 [`test-cards/`](test-cards) holds diagnostic BMPs for verifying the firmware's 4-level grayscale
@@ -125,8 +163,10 @@ the multi-pass grayscale refresh is not running correctly — see
 
 ### Kindle Paperwhite (PNG)
 
-- 1236×1648 portrait (11th gen, 6.8"). A 12th-gen 1264×1680 panel would need a re-render.
-- 8-bit greyscale PNG, no dithering applied — the 16-level panel handles greyscale itself.
+- 1236×1648 (Paperwhite 11th gen), 1264×1680 (Oasis, Paperwhite 12th gen, Kobo Libra Colour),
+  758×1024 (Paperwhite 1st/2nd gen) and 600×800 (basic 6" panels), all portrait.
+- 8-bit greyscale PNG, no dithering applied — these panels have 16 levels and handle greyscale
+  themselves. The Kobo Libra Colour set is RGB PNG.
 
 Both are rendered from live [Tesserae](https://github.com/dmellok) canvases.
 

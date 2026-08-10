@@ -8,7 +8,7 @@ Sleep-screen wallpapers for e-ink readers, rendered at each panel's native geome
 | --- | --- | --- |
 | Xteink X4 | 480×800, 4-level grey | 4-bit BMP, dither baked in |
 | Xteink X3 | 528×792, 4-level grey | 4-bit BMP, dither baked in |
-| Seeed reTerminal Sticky | 480×800 held upright, 4-level grey | 8-bit greyscale PNG, dither baked in |
+| Seeed reTerminal Sticky | 480×800 held upright, 4-level grey | 4-bit BMP or 8-bit greyscale PNG, dither baked in |
 | Kindle Paperwhite (11th gen) | 1236×1648, 16-level grey | 8-bit greyscale PNG |
 | Kindle Scribe | 1860×2480, 16-level grey | 8-bit greyscale PNG |
 | Kindle Oasis / Paperwhite (12th gen) | 1264×1680, 16-level grey | 8-bit greyscale PNG |
@@ -25,8 +25,8 @@ at 45/70/140 with no error diffusion, which blows highlights out to white. The K
 *not* pre-dithered: that panel has 16 levels and renders greyscale PNGs perfectly well on its own.
 
 The reTerminal Sticky files are pre-dithered for the same reason as the Xteink ones — four levels
-is too few to leave to whatever the firmware does on the way in — but shipped as PNG rather than
-BMP, because the firmwares that treat the Sticky as a dashboard read PNG. See
+is too few to leave to whatever the firmware does on the way in — and come in both containers,
+because the Sticky's reader firmware reads BMP while the dashboard firmwares read PNG. See
 [below](#the-reterminal-sticky-shares-the-x4-sheet) for which file to use with which firmware.
 
 ## What's here
@@ -81,14 +81,21 @@ or stuck to a fridge, and upright it is **480×800 with four grey levels** — t
 the X4's palette exactly. So this is not a new layout: `reterminal-sticky` is the X4 sheet, the
 same 151 plates, pixel for pixel. Only the container changes.
 
-Which file you want depends on the firmware, and the Sticky runs several:
+Which file you want depends on the firmware, and the Sticky runs several. Because the plates are
+the X4's, both formats already exist and neither needs converting:
 
-- **Crosspoint** — use [`Pokédex/x4`](Pokédex/x4) directly. It is the same firmware family as the
-  Xteink readers, so the 4-bit native-palette BMPs already hit the 1:1 path described above, and
-  the PNGs here would only be re-quantized on the way in.
+- **Crosspoint, or any firmware that reads BMP** — take the 4-bit BMPs, either from the
+  [`pokedex-reterminal-sticky.zip`](../../releases/tag/pokedex-v2.0) release asset or from
+  [`Pokédex/x4`](Pokédex/x4) in the tree, which holds the identical files. Crosspoint is the same
+  firmware family as the Xteink readers, so a palette-native BMP hits the 1:1 path described
+  above; a PNG would only be re-quantized on the way in.
 - **TRMNL, ESPHome, OpenDisplay, or the stock Seeedash photo upload** — use the PNGs in
   [`Pokédex/reterminal-sticky`](Pokédex/reterminal-sticky). These are dashboard firmwares that
   fetch or are handed an image; PNG is what they read.
+
+The release zip carries the BMPs rather than the PNGs, since BMP is what the Sticky's reader
+firmware wants and the tree already serves the PNGs a click away. The BMPs are not committed a
+second time under `reterminal-sticky/` because they would be byte-for-byte copies of `x4/`.
 
 Both sets are already error-diffused to the four native levels (0/85/170/255), so nothing here
 needs a second dither. If your firmware paints the native landscape buffer without rotating for
@@ -213,8 +220,9 @@ BMP loader expects; no further conversion needed.
 
 Stand it upright first — the plates are portrait.
 
-- **Crosspoint:** copy the `.bmp` files from [`Pokédex/x4`](Pokédex/x4) to the microSD card and set
-  one as the sleep-screen cover, exactly as on the Xteink readers above.
+- **Crosspoint:** copy the `.bmp` files (from the `pokedex-reterminal-sticky.zip` release asset, or
+  from [`Pokédex/x4`](Pokédex/x4), which holds the same files) to the microSD card and set one as
+  the sleep-screen cover, exactly as on the Xteink readers above.
 - **Stock firmware / Seeedash:** upload a PNG from
   [`Pokédex/reterminal-sticky`](Pokédex/reterminal-sticky) as a photo from the app.
 - **TRMNL / ESPHome / OpenDisplay:** serve a PNG from the folder as the image the display polls —

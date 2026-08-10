@@ -12,8 +12,10 @@ Sleep-screen wallpapers for e-ink readers, rendered at each panel's native geome
 | Kindle Scribe | 1860×2480, 16-level grey | 8-bit greyscale PNG |
 | Kindle Oasis / Paperwhite (12th gen) | 1264×1680, 16-level grey | 8-bit greyscale PNG |
 | Kindle Paperwhite (1st/2nd gen) | 758×1024, 16-level grey | 8-bit greyscale PNG |
+| Kindle Paperwhite (3rd gen) | 1072×1448, 16-level grey | 8-bit greyscale PNG |
 | Kindle (basic, 6") and similar | 600×800, 16-level grey | 8-bit greyscale PNG |
 | Kobo Libra Colour | 1264×1680, Kaleido 3 colour | **colour** PNG |
+| Kobo Clara Colour | 1072×1448, Kaleido 3 colour | **colour** PNG |
 
 The Xteink files are pre-dithered because CrossInk/CrossPoint maps a BMP whose palette is exactly
 the four native grey levels (`#000/#555/#AAA/#FFF`) **1:1 to panel states** — no re-quantization,
@@ -32,6 +34,8 @@ at 45/70/140 with no error diffusion, which blows highlights out to white. The K
 | [`Pokédex/kindle-oasis-pw12`](Pokédex/kindle-oasis-pw12) | The same expanded layout at 1264×1680 (Oasis, 12th-gen Paperwhite) |
 | [`Pokédex/kindle-pw2`](Pokédex/kindle-pw2) | The same expanded layout at 758×1024 (1st/2nd-gen Paperwhite) |
 | [`Pokédex/kobo-libra-colour`](Pokédex/kobo-libra-colour) | 1264×1680 **in colour**, red Pokédex shell, for the Kobo Libra Colour |
+| [`Pokédex/kobo-clara-colour`](Pokédex/kobo-clara-colour) | The same colour sheet at 1072×1448 for the Kobo Clara Colour |
+| [`Pokédex/kindle-pw3-zh`](Pokédex/kindle-pw3-zh) | 1072×1448 **in Simplified Chinese** for the 3rd-gen Paperwhite (see below) |
 | [`Pokédex/kindle-6in`](Pokédex/kindle-6in) | 600×800, reduced layout for small 6" panels (see below) |
 | [`Constellations/x4`](Constellations/x4) | All 88 IAU constellations as 480×800 star-chart plates for the X4 |
 | [`Constellations/x3`](Constellations/x3) | The same 88 plates at 528×792 for the X3 |
@@ -49,6 +53,9 @@ at 45/70/140 with no error diffusion, which blows highlights out to white. The K
 </p>
 <p align="center">
   <img src="Pokédex/preview-kobo-libra-colour.png" width="640" alt="Kobo Libra Colour Pokédex plates" />
+</p>
+<p align="center">
+  <img src="Pokédex/preview-kindle-pw3-zh.png" width="640" alt="Simplified Chinese Pokédex plates" />
 </p>
 <p align="center">
   <img src="Constellations/preview-x4.png" width="640" alt="Constellation plates" />
@@ -98,14 +105,39 @@ holds new panels:
 The matchup row is sized off Onix, which carries more chips than any other Kanto species (five
 weaknesses, five resistances and an immunity), so nothing overflows anywhere else.
 
-### The Kobo set is in colour
+### The Kobo sets are in colour
 
-`kobo-libra-colour` is the only colour set here. The Libra Colour's Kaleido 3 panel renders
-colour at 150 ppi but black and white at the full 300 ppi, and desaturates noticeably, so colour
-is used on large blocks — the red Pokédex shell, type badges in their official type colours, stat
-bars in the primary type colour, and matchup chips coded red for weaknesses, green for
-resistances and grey for immunity. Body text stays black on white, where the panel keeps it
-crisp. Sprites are full colour rather than the greyscale treatment the mono sets use.
+`kobo-libra-colour` and `kobo-clara-colour` are the colour sets here. Kaleido 3 renders colour at
+150 ppi but black and white at the full 300 ppi, and desaturates noticeably, so colour is used on
+large blocks — the red Pokédex shell, type badges in their official type colours, stat bars in
+the primary type colour, and matchup chips coded red for weaknesses, green for resistances and
+grey for immunity. Body text stays black on white, where the panel keeps it crisp. Sprites are
+full colour rather than the greyscale treatment the mono sets use.
+
+The Clara Colour is the same sheet at 1072×1448 — a 6" Kaleido 3 panel rather than the Libra's
+7", so it is the same design scaled down rather than a different layout.
+
+### One set is in Chinese
+
+`kindle-pw3-zh` is the Paperwhite sheet in Simplified Chinese, at 1072×1448 for the 3rd-gen
+Paperwhite. The Chinese is the **official** localisation, not a translation of the English sheet:
+species names, categories and dex entries come from PokéAPI's own `zh-Hans` entries, so 妙蛙种子
+is what Nintendo calls Bulbasaur and the dex text is the line from the games. Type names, move
+names, abilities and egg groups come from the same place. Only the nine habitats and the four
+growth rates have no Chinese in PokéAPI and are mapped by hand.
+
+Two things are set differently from the Latin sheets:
+
+- **The type is larger.** A Han character needs roughly twice the em of a capital to stay legible,
+  but a Chinese label is two to four characters where the English was two or three words, so it
+  fits in the same boxes — 13px `HABITAT` becomes 16px 栖息地. The dex-entry row is the elastic one
+  on the English sheet, so the two rows above it are pinned here and the bottom row gets the same
+  space whatever the species; the sprite gives up 40px to pay for it.
+- **The font ships with the plate.** The renderer only has Latin faces, so the sheet carries
+  [Fusion Pixel 12px](https://github.com/TakWolf/fusion-pixel-font) (OFL) inline, subsetted to the
+  ~1,200 characters the 151 plates use. It is a bitmap design on the same 12px grid as the Latin
+  pixel fonts beside it, so the two read as one typeface rather than a pixel font next to a
+  smoothed one.
 
 ## Downloading a folder as a zip
 
@@ -125,6 +157,8 @@ GitHub can't zip a single folder from the web UI, so either:
    - [Download Pokédex/kindle-pw2 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FPok%C3%A9dex%2Fkindle-pw2)
    - [Download Pokédex/kindle-6in as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FPok%C3%A9dex%2Fkindle-6in)
    - [Download Pokédex/kobo-libra-colour as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FPok%C3%A9dex%2Fkobo-libra-colour)
+   - [Download Pokédex/kobo-clara-colour as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FPok%C3%A9dex%2Fkobo-clara-colour)
+   - [Download Pokédex/kindle-pw3-zh as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FPok%C3%A9dex%2Fkindle-pw3-zh)
    - [Download Constellations/x4 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FConstellations%2Fx4)
    - [Download Constellations/x3 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FConstellations%2Fx3)
    - [Download Magic/x4 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FMagic%2Fx4)
@@ -184,18 +218,20 @@ the multi-pass grayscale refresh is not running correctly — see
 ### Kindle Paperwhite (PNG)
 
 - 1860×2480 (Scribe), 1236×1648 (Paperwhite 11th gen), 1264×1680 (Oasis, Paperwhite 12th gen,
-  Kobo Libra Colour), 758×1024 (Paperwhite 1st/2nd gen) and 600×800 (basic 6" panels), all
-  portrait.
+  Kobo Libra Colour), 1072×1448 (Paperwhite 3rd gen, Kobo Clara Colour), 758×1024 (Paperwhite
+  1st/2nd gen) and 600×800 (basic 6" panels), all portrait.
 - 8-bit greyscale PNG, no dithering applied — these panels have 16 levels and handle greyscale
-  themselves. The Kobo Libra Colour set is RGB PNG.
+  themselves. The Kobo Libra Colour and Kobo Clara Colour sets are RGB PNG.
 
 Both are rendered from live [Tesserae](https://github.com/dmellok) canvases.
 
 ### Sources
 
 - **Pokédex** — [PokéAPI](https://pokeapi.co): sprites, base stats, dex entries and habitats are
-  the real Gen-I data set. Pokémon and Pokémon character names are trademarks of Nintendo; this is
-  a fan-made, non-commercial project.
+  the real Gen-I data set, and the Chinese set uses its `zh-Hans` names, categories, dex entries,
+  moves and abilities. Pokémon and Pokémon character names are trademarks of Nintendo; this is
+  a fan-made, non-commercial project. The Chinese plates embed
+  [Fusion Pixel 12px](https://github.com/TakWolf/fusion-pixel-font) (OFL 1.1), subsetted.
 - **Constellations** — stars from the [HYG database](https://github.com/astronexus/HYG-Database)
   v4.1 (CC BY-SA) filtered to magnitude ≤6.5, Messier objects from its deep-sky companion
   catalogue, and stick figures plus IAU boundaries from

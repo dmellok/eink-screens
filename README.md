@@ -8,6 +8,7 @@ Sleep-screen wallpapers for e-ink readers, rendered at each panel's native geome
 | --- | --- | --- |
 | Xteink X4 | 480×800, 4-level grey | 4-bit BMP, dither baked in |
 | Xteink X3 | 528×792, 4-level grey | 4-bit BMP, dither baked in |
+| Seeed reTerminal Sticky | 480×800 held upright, 4-level grey | 8-bit greyscale PNG, dither baked in |
 | Kindle Paperwhite (11th gen) | 1236×1648, 16-level grey | 8-bit greyscale PNG |
 | Kindle Scribe | 1860×2480, 16-level grey | 8-bit greyscale PNG |
 | Kindle Oasis / Paperwhite (12th gen) | 1264×1680, 16-level grey | 8-bit greyscale PNG |
@@ -23,12 +24,18 @@ no dithering (`Bitmap.cpp` nativePalette path). Plain greyscale BMPs instead get
 at 45/70/140 with no error diffusion, which blows highlights out to white. The Kindle files are
 *not* pre-dithered: that panel has 16 levels and renders greyscale PNGs perfectly well on its own.
 
+The reTerminal Sticky files are pre-dithered for the same reason as the Xteink ones — four levels
+is too few to leave to whatever the firmware does on the way in — but shipped as PNG rather than
+BMP, because the firmwares that treat the Sticky as a dashboard read PNG. See
+[below](#the-reterminal-sticky-shares-the-x4-sheet) for which file to use with which firmware.
+
 ## What's here
 
 | Folder | Contents |
 | --- | --- |
 | [`Pokédex/x4`](Pokédex/x4) | All 151 original Kanto Pokémon as 480×800 data-sheet screens for the X4 |
 | [`Pokédex/x3`](Pokédex/x3) | The same 151 screens at 528×792 for the X3 |
+| [`Pokédex/reterminal-sticky`](Pokédex/reterminal-sticky) | The same 151 screens as PNG for the reTerminal Sticky held upright (see below) |
 | [`Pokédex/kindle-pw`](Pokédex/kindle-pw) | The same 151 at 1236×1648, expanded for the Paperwhite (see below) |
 | [`Pokédex/kindle-scribe`](Pokédex/kindle-scribe) | The same 151 at 1860×2480, expanded again for the Scribe (see below) |
 | [`Pokédex/kindle-oasis-pw12`](Pokédex/kindle-oasis-pw12) | The same expanded layout at 1264×1680 (Oasis, 12th-gen Paperwhite) |
@@ -66,6 +73,29 @@ at 45/70/140 with no error diffusion, which blows highlights out to white. The K
 <p align="center">
   <img src="SCP/preview-x4.png" width="640" alt="SCP file plates" />
 </p>
+
+### The reTerminal Sticky shares the X4 sheet
+
+The Sticky's 3.97" panel is wired as 800×480, but the thing is made to be stood upright on a desk
+or stuck to a fridge, and upright it is **480×800 with four grey levels** — the X4's geometry and
+the X4's palette exactly. So this is not a new layout: `reterminal-sticky` is the X4 sheet, the
+same 151 plates, pixel for pixel. Only the container changes.
+
+Which file you want depends on the firmware, and the Sticky runs several:
+
+- **Crosspoint** — use [`Pokédex/x4`](Pokédex/x4) directly. It is the same firmware family as the
+  Xteink readers, so the 4-bit native-palette BMPs already hit the 1:1 path described above, and
+  the PNGs here would only be re-quantized on the way in.
+- **TRMNL, ESPHome, OpenDisplay, or the stock Seeedash photo upload** — use the PNGs in
+  [`Pokédex/reterminal-sticky`](Pokédex/reterminal-sticky). These are dashboard firmwares that
+  fetch or are handed an image; PNG is what they read.
+
+Both sets are already error-diffused to the four native levels (0/85/170/255), so nothing here
+needs a second dither. If your firmware paints the native landscape buffer without rotating for
+you, rotate the plate 90° on the way in rather than re-rendering it — the dither survives a
+rotation, but not a rescale.
+
+> Built to the published 800×480 / 4-level spec and not yet confirmed on hardware.
 
 ### The Paperwhite Pokédex is a different layout
 
@@ -151,6 +181,7 @@ GitHub can't zip a single folder from the web UI, so either:
    these direct links:
    - [Download Pokédex/x4 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FPok%C3%A9dex%2Fx4)
    - [Download Pokédex/x3 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FPok%C3%A9dex%2Fx3)
+   - [Download Pokédex/reterminal-sticky as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FPok%C3%A9dex%2Freterminal-sticky)
    - [Download Pokédex/kindle-pw as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FPok%C3%A9dex%2Fkindle-pw)
    - [Download Pokédex/kindle-scribe as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FPok%C3%A9dex%2Fkindle-scribe)
    - [Download Pokédex/kindle-oasis-pw12 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FPok%C3%A9dex%2Fkindle-oasis-pw12)
@@ -177,6 +208,17 @@ GitHub can't zip a single folder from the web UI, so either:
 
 Files are 4-bit indexed BMPs (four-gray palette, top-down rows) — the exact layout the stock
 BMP loader expects; no further conversion needed.
+
+### Seeed reTerminal Sticky
+
+Stand it upright first — the plates are portrait.
+
+- **Crosspoint:** copy the `.bmp` files from [`Pokédex/x4`](Pokédex/x4) to the microSD card and set
+  one as the sleep-screen cover, exactly as on the Xteink readers above.
+- **Stock firmware / Seeedash:** upload a PNG from
+  [`Pokédex/reterminal-sticky`](Pokédex/reterminal-sticky) as a photo from the app.
+- **TRMNL / ESPHome / OpenDisplay:** serve a PNG from the folder as the image the display polls —
+  point it at a random file per refresh and the panel cycles the dex on its own.
 
 ### Kindle Paperwhite / Scribe
 

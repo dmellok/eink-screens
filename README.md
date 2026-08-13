@@ -50,6 +50,8 @@ because the Sticky's reader firmware reads BMP while the dashboard firmwares rea
 | [`Magic/x3`](Magic/x3) | The same 104 cards at 528×792 for the X3 |
 | [`SCP/x4`](SCP/x4) | Top 100 SCP Foundation articles as 480×800 file plates for the X4 |
 | [`SCP/x3`](SCP/x3) | The same 100 plates at 528×792 for the X3 |
+| [`Prehistoric/x4`](Prehistoric/x4) | 164 extinct animals as 480×800 natural-history plates for the X4 |
+| [`Prehistoric/x3`](Prehistoric/x3) | The same 164 plates at 528×792 for the X3 |
 
 <p align="center">
   <img src="Pokédex/preview-x4.png" width="300" alt="X4 preview" />
@@ -72,6 +74,9 @@ because the Sticky's reader firmware reads BMP while the dashboard firmwares rea
 </p>
 <p align="center">
   <img src="SCP/preview-x4.png" width="640" alt="SCP file plates" />
+</p>
+<p align="center">
+  <img src="Prehistoric/preview-x4.png" width="640" alt="Prehistoric life plates" />
 </p>
 
 ### The reTerminal Sticky shares the X4 sheet
@@ -176,6 +181,38 @@ Two things are set differently from the Latin sheets:
   pixel fonts beside it, so the two read as one typeface rather than a pixel font next to a
   smoothed one.
 
+### The Prehistoric plates are assembled from live data
+
+Each of the 164 plates is one extinct animal, and almost everything on it is fetched rather than
+written. Age range, stage, taxonomy, diet, ecology and the fossil localities all come from the
+[Paleobiology Database](https://paleobiodb.org); the silhouette comes from
+[PhyloPic](https://www.phylopic.org); the coastlines are Natural Earth on an Equal Earth
+projection. Only body size is hand-compiled — PBDB does not carry it and Wikidata's coverage of
+extinct taxa is close to empty — so those figures are typical adult literature estimates and the
+plate says so.
+
+Two things are worth knowing about how to read them:
+
+- **The human is at true scale.** The grey figure is 1.75 m, drawn at the same px-per-metre as the
+  animal beside it, so the comparison is arithmetic rather than artistic. Where the animal is small
+  enough that a to-scale human would not fit on the plate, the human is dropped and the scale bar
+  says `human omitted` — it is never silently rescaled.
+- **The quoted dimension matches the pose.** Sauropods and mosasaurs are drawn in side view and
+  scaled to body length; pterosaurs are drawn wings-out and scaled to wingspan; bipeds like
+  *Gastornis* and the terror bird are scaled to standing height, with the dimension bar turned
+  vertical. The silhouette is picked per taxon to match — for wingspan the widest available pose,
+  for height the most upright.
+
+The dots on the map are individual PBDB collections at **modern** coordinates, not
+palaeocoordinates: they show where the fossils were dug up, not where the animal lived on the
+continents of its own day. *Mammuthus primigenius* has 77 of them across Eurasia and North America;
+*Argentinosaurus* has one.
+
+Where PhyloPic had no silhouette for the species or its genus, a higher-taxon one stands in and
+[`ATTRIBUTION.md`](Prehistoric/ATTRIBUTION.md) marks which — those eight plates illustrate the
+group rather than the species. That file also carries the per-plate artist and licence, which
+vary: mostly CC0 and CC BY, with five plates whose only available silhouette is NonCommercial.
+
 ## Downloading a folder as a zip
 
 GitHub can't zip a single folder from the web UI, so either:
@@ -183,7 +220,7 @@ GitHub can't zip a single folder from the web UI, so either:
 1. **Releases (easiest):** every set is pre-zipped on the [releases page](../../releases).
    The Pokédex lives in one place, [Pokédex v2.0](../../releases/tag/pokedex-v2.0), with a zip
    per panel size; the other sets have a release each
-   (`constellations-*`, `magic-*`, `scp-*`).
+   (`constellations-*`, `magic-*`, `scp-*`, `prehistoric-*`).
 2. **download-directory:** paste a folder URL into <https://download-directory.github.io>, or use
    these direct links:
    - [Download Pokédex/x4 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FPok%C3%A9dex%2Fx4)
@@ -203,6 +240,8 @@ GitHub can't zip a single folder from the web UI, so either:
    - [Download Magic/x3 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FMagic%2Fx3)
    - [Download SCP/x4 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FSCP%2Fx4)
    - [Download SCP/x3 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FSCP%2Fx3)
+   - [Download Prehistoric/x4 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FPrehistoric%2Fx4)
+   - [Download Prehistoric/x3 as zip](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdmellok%2Feink-screens%2Ftree%2Fmain%2FPrehistoric%2Fx3)
 3. **Whole repo:** Code → Download ZIP (includes every folder).
 
 ## Installing on the device

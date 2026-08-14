@@ -43,6 +43,7 @@ because the Sticky's reader firmware reads BMP while the dashboard firmwares rea
 | [`Pokédex/kobo-libra-colour`](Pokédex/kobo-libra-colour) | 1264×1680 **in colour**, red Pokédex shell, for the Kobo Libra Colour |
 | [`Pokédex/kobo-clara-colour`](Pokédex/kobo-clara-colour) | The same colour sheet at 1072×1448 for the Kobo Clara Colour |
 | [`Pokédex/kindle-pw3-zh`](Pokédex/kindle-pw3-zh) | 1072×1448 **in Simplified Chinese** for the 3rd-gen Paperwhite (see below) |
+| [`Pokédex/kindle-pw5-zh-hant`](Pokédex/kindle-pw5-zh-hant) | 1236×1648 **in Traditional Chinese** for the 11th-gen Paperwhite (see below) |
 | [`Pokédex/kindle-6in`](Pokédex/kindle-6in) | 600×800, reduced layout for small 6" panels (see below) |
 | [`Constellations/x4`](Constellations/x4) | All 88 IAU constellations as 480×800 star-chart plates for the X4 |
 | [`Constellations/x3`](Constellations/x3) | The same 88 plates at 528×792 for the X3 |
@@ -65,6 +66,9 @@ because the Sticky's reader firmware reads BMP while the dashboard firmwares rea
 </p>
 <p align="center">
   <img src="Pokédex/preview-kindle-pw3-zh.png" width="640" alt="Simplified Chinese Pokédex plates" />
+</p>
+<p align="center">
+  <img src="Pokédex/preview-kindle-pw5-zh-hant.png" width="640" alt="Traditional Chinese Pokédex plates" />
 </p>
 <p align="center">
   <img src="Constellations/preview-x4.png" width="640" alt="Constellation plates" />
@@ -159,7 +163,7 @@ full colour rather than the greyscale treatment the mono sets use.
 The Clara Colour is the same sheet at 1072×1448 — a 6" Kaleido 3 panel rather than the Libra's
 7", so it is the same design scaled down rather than a different layout.
 
-### One set is in Chinese
+### Two sets are in Chinese
 
 `kindle-pw3-zh` is the Paperwhite sheet in Simplified Chinese, at 1072×1448 for the 3rd-gen
 Paperwhite. The Chinese is the **official** localisation, not a translation of the English sheet:
@@ -180,6 +184,21 @@ Two things are set differently from the Latin sheets:
   ~1,200 characters the 151 plates use. It is a bitmap design on the same 12px grid as the Latin
   pixel fonts beside it, so the two read as one typeface rather than a pixel font next to a
   smoothed one.
+
+`kindle-pw5-zh-hant` is the same sheet in **Traditional Chinese**, at 1236×1648 for the 11th-gen
+Paperwhite. It is not a character conversion of the Simplified set: the strings come from
+PokéAPI's `zh-Hant` entries, which are Nintendo's Taiwanese localisation, so the wording differs
+where the two scripts diverge (資料 rather than 数据, 訊號 rather than 信号) and every name,
+category, dex entry, move, ability, type and egg group is the one printed in the Taiwanese games.
+The same thirteen strings — nine habitats, four growth rates — have no Chinese in PokéAPI at all
+and are mapped by hand. Fusion Pixel ships a separate `zh_hant` build, so this set carries its own
+subset (~1,300 characters, 41 kB) rather than reusing the Simplified face, which does not contain
+the Traditional forms.
+
+One thing it gets that no other localised set does: **1236×1648 is the sheet's own authoring
+size**, so this is the only Chinese set rendered 1:1. Every other panel scales the sheet to fit —
+the 3rd-gen Paperwhite set runs at 0.867 — and scaling resamples three bitmap pixel faces. Here
+the pixel grid survives intact.
 
 ### The Prehistoric plates are assembled from live data
 

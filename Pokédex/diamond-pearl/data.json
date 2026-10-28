@@ -1,0 +1,4000 @@
+[
+  {
+    "sinnoh": 1,
+    "national": 387,
+    "slug": "turtwig",
+    "name": "Turtwig",
+    "genus": "Tiny Leaf Pokémon",
+    "height": 0.4,
+    "weight": 10.2,
+    "catch_rate": 45,
+    "stats": {
+      "hp": 55,
+      "attack": 68,
+      "defense": 64,
+      "special-attack": 45,
+      "special-defense": 55,
+      "speed": 31
+    },
+    "text": {
+      "diamond": "Made from soil, the shell on its back hardens when it drinks water. It lives along lakes.",
+      "pearl": "It undertakes photosynthesis with its body, making oxygen. The leaf on its head wilts if it is thirsty."
+    },
+    "types": [
+      "grass"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/387.png"
+  },
+  {
+    "sinnoh": 2,
+    "national": 388,
+    "slug": "grotle",
+    "name": "Grotle",
+    "genus": "Grove Pokémon",
+    "height": 1.1,
+    "weight": 97.0,
+    "catch_rate": 45,
+    "stats": {
+      "hp": 75,
+      "attack": 89,
+      "defense": 85,
+      "special-attack": 55,
+      "special-defense": 65,
+      "speed": 36
+    },
+    "text": {
+      "diamond": "It lives along water in forests. In the daytime, it leaves the forest to sunbathe its treed shell.",
+      "pearl": "The shell is hardened soil. Some Pokémon come to peck the berries growing on the trees on its back."
+    },
+    "types": [
+      "grass"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/388.png"
+  },
+  {
+    "sinnoh": 3,
+    "national": 389,
+    "slug": "torterra",
+    "name": "Torterra",
+    "genus": "Continent Pokémon",
+    "height": 2.2,
+    "weight": 310.0,
+    "catch_rate": 45,
+    "stats": {
+      "hp": 95,
+      "attack": 109,
+      "defense": 105,
+      "special-attack": 75,
+      "special-defense": 85,
+      "speed": 56
+    },
+    "text": {
+      "diamond": "Small Pokémon occasionally gather on its unmoving back to begin building their nests.",
+      "pearl": "Groups of this Pokémon migrating in search of water have been mistaken for “moving forests.”"
+    },
+    "types": [
+      "grass",
+      "ground"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/389.png"
+  },
+  {
+    "sinnoh": 4,
+    "national": 390,
+    "slug": "chimchar",
+    "name": "Chimchar",
+    "genus": "Chimp Pokémon",
+    "height": 0.5,
+    "weight": 6.2,
+    "catch_rate": 45,
+    "stats": {
+      "hp": 44,
+      "attack": 58,
+      "defense": 44,
+      "special-attack": 58,
+      "special-defense": 44,
+      "speed": 61
+    },
+    "text": {
+      "diamond": "It agilely scales sheer cliffs to live atop craggy mountains. Its fire is put out when it sleeps.",
+      "pearl": "Its fiery rear end is fueled by gas made in its belly. Even rain can’t extinguish the fire."
+    },
+    "types": [
+      "fire"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/390.png"
+  },
+  {
+    "sinnoh": 5,
+    "national": 391,
+    "slug": "monferno",
+    "name": "Monferno",
+    "genus": "Playful Pokémon",
+    "height": 0.9,
+    "weight": 22.0,
+    "catch_rate": 45,
+    "stats": {
+      "hp": 64,
+      "attack": 78,
+      "defense": 52,
+      "special-attack": 78,
+      "special-defense": 52,
+      "speed": 81
+    },
+    "text": {
+      "diamond": "To intimidate attackers, it stretches the fire on its tail to make itself appear bigger.",
+      "pearl": "It uses ceilings and walls to launch aerial attacks. Its fiery tail is but one weapon."
+    },
+    "types": [
+      "fire",
+      "fighting"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/391.png"
+  },
+  {
+    "sinnoh": 6,
+    "national": 392,
+    "slug": "infernape",
+    "name": "Infernape",
+    "genus": "Flame Pokémon",
+    "height": 1.2,
+    "weight": 55.0,
+    "catch_rate": 45,
+    "stats": {
+      "hp": 76,
+      "attack": 104,
+      "defense": 71,
+      "special-attack": 104,
+      "special-defense": 71,
+      "speed": 108
+    },
+    "text": {
+      "diamond": "It uses a special kind of martial arts involving all its limbs. Its fire never goes out.",
+      "pearl": "Its crown of fire is indicative of its fiery nature. It is beaten by none in terms of quickness."
+    },
+    "types": [
+      "fire",
+      "fighting"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/392.png"
+  },
+  {
+    "sinnoh": 7,
+    "national": 393,
+    "slug": "piplup",
+    "name": "Piplup",
+    "genus": "Penguin Pokémon",
+    "height": 0.4,
+    "weight": 5.2,
+    "catch_rate": 45,
+    "stats": {
+      "hp": 53,
+      "attack": 51,
+      "defense": 53,
+      "special-attack": 61,
+      "special-defense": 56,
+      "speed": 40
+    },
+    "text": {
+      "diamond": "Because it is very proud, it hates accepting food from people. Its thick down guards it from cold.",
+      "pearl": "It lives along shores in northern countries. A skilled swimmer, it dives for over 10 minutes to hunt."
+    },
+    "types": [
+      "water"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/393.png"
+  },
+  {
+    "sinnoh": 8,
+    "national": 394,
+    "slug": "prinplup",
+    "name": "Prinplup",
+    "genus": "Penguin Pokémon",
+    "height": 0.8,
+    "weight": 23.0,
+    "catch_rate": 45,
+    "stats": {
+      "hp": 64,
+      "attack": 66,
+      "defense": 68,
+      "special-attack": 81,
+      "special-defense": 76,
+      "speed": 50
+    },
+    "text": {
+      "diamond": "It lives alone, away from others. Apparently, every one of them believes it is the most important.",
+      "pearl": "Its wings deliver wicked blows that snap even the thickest of trees. It searches for prey in icy seas."
+    },
+    "types": [
+      "water"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/394.png"
+  },
+  {
+    "sinnoh": 9,
+    "national": 395,
+    "slug": "empoleon",
+    "name": "Empoleon",
+    "genus": "Emperor Pokémon",
+    "height": 1.7,
+    "weight": 84.5,
+    "catch_rate": 45,
+    "stats": {
+      "hp": 84,
+      "attack": 86,
+      "defense": 88,
+      "special-attack": 111,
+      "special-defense": 101,
+      "speed": 60
+    },
+    "text": {
+      "diamond": "The three horns that extend from its beak attest to its power. The leader has the biggest horns.",
+      "pearl": "It swims as fast as a jet boat. The edges of its wings are sharp and can slice apart drifting ice."
+    },
+    "types": [
+      "water",
+      "steel"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/395.png"
+  },
+  {
+    "sinnoh": 10,
+    "national": 396,
+    "slug": "starly",
+    "name": "Starly",
+    "genus": "Starling Pokémon",
+    "height": 0.3,
+    "weight": 2.0,
+    "catch_rate": 255,
+    "stats": {
+      "hp": 40,
+      "attack": 55,
+      "defense": 30,
+      "special-attack": 30,
+      "special-defense": 30,
+      "speed": 60
+    },
+    "text": {
+      "diamond": "They flock in great numbers. Though small, they flap their wings with great power.",
+      "pearl": "Usually with a large flock, it is barely noticeable when alone. Its cries are very strident."
+    },
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/396.png"
+  },
+  {
+    "sinnoh": 11,
+    "national": 397,
+    "slug": "staravia",
+    "name": "Staravia",
+    "genus": "Starling Pokémon",
+    "height": 0.6,
+    "weight": 15.5,
+    "catch_rate": 120,
+    "stats": {
+      "hp": 55,
+      "attack": 75,
+      "defense": 50,
+      "special-attack": 40,
+      "special-defense": 40,
+      "speed": 80
+    },
+    "text": {
+      "diamond": "It flies around forests and fields in search of bug Pokémon. It stays within a huge flock.",
+      "pearl": "It lives in forests and fields. Squabbles over territory occur when flocks collide."
+    },
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/397.png"
+  },
+  {
+    "sinnoh": 12,
+    "national": 398,
+    "slug": "staraptor",
+    "name": "Staraptor",
+    "genus": "Predator Pokémon",
+    "height": 1.2,
+    "weight": 24.9,
+    "catch_rate": 45,
+    "stats": {
+      "hp": 85,
+      "attack": 120,
+      "defense": 70,
+      "special-attack": 50,
+      "special-defense": 50,
+      "speed": 100
+    },
+    "text": {
+      "diamond": "It has a savage nature. It will courageously challenge foes that are much larger.",
+      "pearl": "The muscles in its wings and legs are strong. It can easily fly while gripping a small Pokémon."
+    },
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/398.png"
+  },
+  {
+    "sinnoh": 13,
+    "national": 399,
+    "slug": "bidoof",
+    "name": "Bidoof",
+    "genus": "Plump Mouse Pokémon",
+    "height": 0.5,
+    "weight": 20.0,
+    "catch_rate": 255,
+    "stats": {
+      "hp": 59,
+      "attack": 45,
+      "defense": 40,
+      "special-attack": 35,
+      "special-defense": 40,
+      "speed": 31
+    },
+    "text": {
+      "diamond": "With nerves of steel, nothing can perturb it. It is more agile and active than it appears.",
+      "pearl": "It constantly gnaws on logs and rocks to whittle down its front teeth. It nests alongside water."
+    },
+    "types": [
+      "normal"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/399.png"
+  },
+  {
+    "sinnoh": 14,
+    "national": 400,
+    "slug": "bibarel",
+    "name": "Bibarel",
+    "genus": "Beaver Pokémon",
+    "height": 1.0,
+    "weight": 31.5,
+    "catch_rate": 127,
+    "stats": {
+      "hp": 79,
+      "attack": 85,
+      "defense": 60,
+      "special-attack": 55,
+      "special-defense": 60,
+      "speed": 71
+    },
+    "text": {
+      "diamond": "It makes its nest by damming streams with bark and mud. It is known as an industrious worker.",
+      "pearl": "While its movements out of water are sluggish, it can swim as fast as any FEEBAS."
+    },
+    "types": [
+      "normal",
+      "water"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/400.png"
+  },
+  {
+    "sinnoh": 15,
+    "national": 401,
+    "slug": "kricketot",
+    "name": "Kricketot",
+    "genus": "Cricket Pokémon",
+    "height": 0.3,
+    "weight": 2.2,
+    "catch_rate": 255,
+    "stats": {
+      "hp": 37,
+      "attack": 25,
+      "defense": 41,
+      "special-attack": 25,
+      "special-defense": 41,
+      "speed": 25
+    },
+    "text": {
+      "diamond": "It shakes its head back to front, causing its antennae to hit each other and sound like a xylophone.",
+      "pearl": "It chats with others using the sounds of its colliding antennae. These sounds are fall hallmarks."
+    },
+    "types": [
+      "bug"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/401.png"
+  },
+  {
+    "sinnoh": 16,
+    "national": 402,
+    "slug": "kricketune",
+    "name": "Kricketune",
+    "genus": "Cricket Pokémon",
+    "height": 1.0,
+    "weight": 25.5,
+    "catch_rate": 45,
+    "stats": {
+      "hp": 77,
+      "attack": 85,
+      "defense": 51,
+      "special-attack": 55,
+      "special-defense": 51,
+      "speed": 65
+    },
+    "text": {
+      "diamond": "It crosses its knifelike arms in front of its chest when it cries. It can compose melodies ad lib.",
+      "pearl": "It signals its emotions with its melodies. Scientists are studying these melodic patterns."
+    },
+    "types": [
+      "bug"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/402.png"
+  },
+  {
+    "sinnoh": 17,
+    "national": 403,
+    "slug": "shinx",
+    "name": "Shinx",
+    "genus": "Flash Pokémon",
+    "height": 0.5,
+    "weight": 9.5,
+    "catch_rate": 235,
+    "stats": {
+      "hp": 45,
+      "attack": 65,
+      "defense": 34,
+      "special-attack": 40,
+      "special-defense": 34,
+      "speed": 45
+    },
+    "text": {
+      "diamond": "All of its fur dazzles if danger is sensed. It flees while the foe is momentarily blinded.",
+      "pearl": "Its forelegs have a muscle-based system of generating electricity. Its body shines if endangered."
+    },
+    "types": [
+      "electric"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/403.png"
+  },
+  {
+    "sinnoh": 18,
+    "national": 404,
+    "slug": "luxio",
+    "name": "Luxio",
+    "genus": "Spark Pokémon",
+    "height": 0.9,
+    "weight": 30.5,
+    "catch_rate": 120,
+    "stats": {
+      "hp": 60,
+      "attack": 85,
+      "defense": 49,
+      "special-attack": 60,
+      "special-defense": 49,
+      "speed": 60
+    },
+    "text": {
+      "diamond": "Its claws loose electricity with enough amperage to cause fainting. They live in small groups.",
+      "pearl": "It rests its forelegs on others to communicate with rhythmic electric pulses from its claws."
+    },
+    "types": [
+      "electric"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/404.png"
+  },
+  {
+    "sinnoh": 19,
+    "national": 405,
+    "slug": "luxray",
+    "name": "Luxray",
+    "genus": "Gleam Eyes Pokémon",
+    "height": 1.4,
+    "weight": 42.0,
+    "catch_rate": 45,
+    "stats": {
+      "hp": 80,
+      "attack": 120,
+      "defense": 79,
+      "special-attack": 95,
+      "special-defense": 79,
+      "speed": 70
+    },
+    "text": {
+      "diamond": "It has eyes that can see through anything. It spots and captures prey hiding behind objects.",
+      "pearl": "When its eyes gleam gold, it can spot hiding prey--even those taking shelter behind a wall."
+    },
+    "types": [
+      "electric"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/405.png"
+  },
+  {
+    "sinnoh": 20,
+    "national": 63,
+    "slug": "abra",
+    "name": "Abra",
+    "genus": "Psi Pokémon",
+    "height": 0.9,
+    "weight": 19.5,
+    "catch_rate": 200,
+    "stats": {
+      "hp": 25,
+      "attack": 20,
+      "defense": 15,
+      "special-attack": 105,
+      "special-defense": 55,
+      "speed": 90
+    },
+    "text": {
+      "diamond": "It sleeps for 18 hours a day. Even when awake, it teleports itself while remaining seated.",
+      "pearl": "Even while asleep, it maintains a telepathic radar. It teleports when it is threatened."
+    },
+    "types": [
+      "psychic"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/63.png"
+  },
+  {
+    "sinnoh": 21,
+    "national": 64,
+    "slug": "kadabra",
+    "name": "Kadabra",
+    "genus": "Psi Pokémon",
+    "height": 1.3,
+    "weight": 56.5,
+    "catch_rate": 100,
+    "stats": {
+      "hp": 40,
+      "attack": 35,
+      "defense": 30,
+      "special-attack": 120,
+      "special-defense": 70,
+      "speed": 105
+    },
+    "text": {
+      "diamond": "If one is nearby, an eerie shadow appears on TV screens. Seeing the shadow is said to bring bad luck.",
+      "pearl": "When it uses its psychic power, it emits strong ha waves that can ruin precision devices."
+    },
+    "types": [
+      "psychic"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/64.png"
+  },
+  {
+    "sinnoh": 22,
+    "national": 65,
+    "slug": "alakazam",
+    "name": "Alakazam",
+    "genus": "Psi Pokémon",
+    "height": 1.5,
+    "weight": 48.0,
+    "catch_rate": 50,
+    "stats": {
+      "hp": 55,
+      "attack": 50,
+      "defense": 45,
+      "special-attack": 135,
+      "special-defense": 85,
+      "speed": 120
+    },
+    "text": {
+      "diamond": "Its superb memory lets it recall everything it has experienced from birth. Its IQ exceeds 5,000.",
+      "pearl": "Its highly developed brain is on par with a supercomputer. It can use all forms of psychic abilities."
+    },
+    "types": [
+      "psychic"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/65.png"
+  },
+  {
+    "sinnoh": 23,
+    "national": 129,
+    "slug": "magikarp",
+    "name": "Magikarp",
+    "genus": "Fish Pokémon",
+    "height": 0.9,
+    "weight": 10.0,
+    "catch_rate": 255,
+    "stats": {
+      "hp": 20,
+      "attack": 10,
+      "defense": 55,
+      "special-attack": 15,
+      "special-defense": 20,
+      "speed": 80
+    },
+    "text": {
+      "diamond": "It is said to be the world’s weakest Pokémon. No one knows why it has managed to survive.",
+      "pearl": "It is unable to swim against even slow-moving currents. It always splashes about for some reason."
+    },
+    "types": [
+      "water"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/129.png"
+  },
+  {
+    "sinnoh": 24,
+    "national": 130,
+    "slug": "gyarados",
+    "name": "Gyarados",
+    "genus": "Atrocious Pokémon",
+    "height": 6.5,
+    "weight": 235.0,
+    "catch_rate": 45,
+    "stats": {
+      "hp": 95,
+      "attack": 125,
+      "defense": 79,
+      "special-attack": 60,
+      "special-defense": 100,
+      "speed": 81
+    },
+    "text": {
+      "diamond": "Once it appears, its rage never settles until it has razed the fields and mountains around it.",
+      "pearl": "In ancient literature, there is a record of a GYARADOS that razed a village when violence flared."
+    },
+    "types": [
+      "water",
+      "flying"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/130.png"
+  },
+  {
+    "sinnoh": 25,
+    "national": 406,
+    "slug": "budew",
+    "name": "Budew",
+    "genus": "Bud Pokémon",
+    "height": 0.2,
+    "weight": 1.2,
+    "catch_rate": 255,
+    "stats": {
+      "hp": 40,
+      "attack": 30,
+      "defense": 35,
+      "special-attack": 50,
+      "special-defense": 70,
+      "speed": 55
+    },
+    "text": {
+      "diamond": "Over the winter, it closes its bud and endures the cold. In spring, the bud opens and releases pollen.",
+      "pearl": "It lives alongside clear ponds. It scatters pollen that induces harsh sneezing and runny noses."
+    },
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/406.png"
+  },
+  {
+    "sinnoh": 26,
+    "national": 315,
+    "slug": "roselia",
+    "name": "Roselia",
+    "genus": "Thorn Pokémon",
+    "height": 0.3,
+    "weight": 2.0,
+    "catch_rate": 150,
+    "stats": {
+      "hp": 50,
+      "attack": 60,
+      "defense": 45,
+      "special-attack": 100,
+      "special-defense": 80,
+      "speed": 65
+    },
+    "text": {
+      "diamond": "ROSELIA raised on clean drinking water are known to grow vividly colored flowers.",
+      "pearl": "The beautiful flowers on its arms have toxic thorns. Don’t even think about picking those flowers."
+    },
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/315.png"
+  },
+  {
+    "sinnoh": 27,
+    "national": 407,
+    "slug": "roserade",
+    "name": "Roserade",
+    "genus": "Bouquet Pokémon",
+    "height": 0.9,
+    "weight": 14.5,
+    "catch_rate": 75,
+    "stats": {
+      "hp": 60,
+      "attack": 70,
+      "defense": 55,
+      "special-attack": 125,
+      "special-defense": 105,
+      "speed": 90
+    },
+    "text": {
+      "diamond": "It attracts prey with a sweet aroma, then downs it with thorny whips hidden in its arms.",
+      "pearl": "With the movements of a dancer, it strikes with whips that are densely lined with poison thorns."
+    },
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/407.png"
+  },
+  {
+    "sinnoh": 28,
+    "national": 41,
+    "slug": "zubat",
+    "name": "Zubat",
+    "genus": "Bat Pokémon",
+    "height": 0.8,
+    "weight": 7.5,
+    "catch_rate": 255,
+    "stats": {
+      "hp": 40,
+      "attack": 45,
+      "defense": 35,
+      "special-attack": 30,
+      "special-defense": 40,
+      "speed": 55
+    },
+    "text": {
+      "diamond": "Even though it has no eyes, it can sense obstacles using ultrasonic waves it emits from its mouth.",
+      "pearl": "Disliking sunlight, it sleeps deep in forests and caves until sundown."
+    },
+    "types": [
+      "poison",
+      "flying"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/41.png"
+  },
+  {
+    "sinnoh": 29,
+    "national": 42,
+    "slug": "golbat",
+    "name": "Golbat",
+    "genus": "Bat Pokémon",
+    "height": 1.6,
+    "weight": 55.0,
+    "catch_rate": 90,
+    "stats": {
+      "hp": 75,
+      "attack": 80,
+      "defense": 70,
+      "special-attack": 65,
+      "special-defense": 75,
+      "speed": 90
+    },
+    "text": {
+      "diamond": "It loves the blood of humans and Pokémon. It flies around at night in search of neck veins.",
+      "pearl": "Once it starts sucking blood, it does not stop until it is full. It flies at night in search of prey."
+    },
+    "types": [
+      "poison",
+      "flying"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/42.png"
+  },
+  {
+    "sinnoh": 30,
+    "national": 169,
+    "slug": "crobat",
+    "name": "Crobat",
+    "genus": "Bat Pokémon",
+    "height": 1.8,
+    "weight": 75.0,
+    "catch_rate": 90,
+    "stats": {
+      "hp": 85,
+      "attack": 90,
+      "defense": 80,
+      "special-attack": 70,
+      "special-defense": 80,
+      "speed": 130
+    },
+    "text": {
+      "diamond": "Having four wings enables it to fly faster and more quietly. It turns active when the night comes.",
+      "pearl": "A Pokémon that gained vastly enhanced flying performance by having its legs turn into wings."
+    },
+    "types": [
+      "poison",
+      "flying"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/169.png"
+  },
+  {
+    "sinnoh": 31,
+    "national": 74,
+    "slug": "geodude",
+    "name": "Geodude",
+    "genus": "Rock Pokémon",
+    "height": 0.4,
+    "weight": 20.0,
+    "catch_rate": 255,
+    "stats": {
+      "hp": 40,
+      "attack": 80,
+      "defense": 100,
+      "special-attack": 30,
+      "special-defense": 30,
+      "speed": 20
+    },
+    "text": {
+      "diamond": "Many live on mountain trails and remain half buried while keeping an eye on climbers.",
+      "pearl": "It is impossible to distinguish from rocks. It slams against others in contests of hardness."
+    },
+    "types": [
+      "rock",
+      "ground"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/74.png"
+  },
+  {
+    "sinnoh": 32,
+    "national": 75,
+    "slug": "graveler",
+    "name": "Graveler",
+    "genus": "Rock Pokémon",
+    "height": 1.0,
+    "weight": 105.0,
+    "catch_rate": 120,
+    "stats": {
+      "hp": 55,
+      "attack": 95,
+      "defense": 115,
+      "special-attack": 45,
+      "special-defense": 45,
+      "speed": 35
+    },
+    "text": {
+      "diamond": "GRAVELER make their homes on sheer cliff faces by gouging out numerous horizontal holes.",
+      "pearl": "It tumbles down slopes, heedless of any body parts chipping off. It eats a ton of rocks daily."
+    },
+    "types": [
+      "rock",
+      "ground"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/75.png"
+  },
+  {
+    "sinnoh": 33,
+    "national": 76,
+    "slug": "golem",
+    "name": "Golem",
+    "genus": "Megaton Pokémon",
+    "height": 1.4,
+    "weight": 300.0,
+    "catch_rate": 45,
+    "stats": {
+      "hp": 80,
+      "attack": 110,
+      "defense": 130,
+      "special-attack": 55,
+      "special-defense": 65,
+      "speed": 45
+    },
+    "text": {
+      "diamond": "It sheds its hide once a year. Its boulderlike body is so tough, even dynamite can’t harm it.",
+      "pearl": "It tumbles down mountains, leaving grooves from peak to base. Stay clear of these grooves."
+    },
+    "types": [
+      "rock",
+      "ground"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/76.png"
+  },
+  {
+    "sinnoh": 34,
+    "national": 95,
+    "slug": "onix",
+    "name": "Onix",
+    "genus": "Rock Snake Pokémon",
+    "height": 8.8,
+    "weight": 210.0,
+    "catch_rate": 45,
+    "stats": {
+      "hp": 35,
+      "attack": 45,
+      "defense": 160,
+      "special-attack": 30,
+      "special-defense": 45,
+      "speed": 70
+    },
+    "text": {
+      "diamond": "When it travels underground, it causes rumbling and tremors. It can move at 50 mph.",
+      "pearl": "It squirms through the ground using its long and rugged body. It always eats while burrowing."
+    },
+    "types": [
+      "rock",
+      "ground"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/95.png"
+  },
+  {
+    "sinnoh": 35,
+    "national": 208,
+    "slug": "steelix",
+    "name": "Steelix",
+    "genus": "Iron Snake Pokémon",
+    "height": 9.2,
+    "weight": 400.0,
+    "catch_rate": 25,
+    "stats": {
+      "hp": 75,
+      "attack": 85,
+      "defense": 200,
+      "special-attack": 55,
+      "special-defense": 65,
+      "speed": 30
+    },
+    "text": {
+      "diamond": "Tempered underground under high pressure and heat, its body is harder than any metal.",
+      "pearl": "It chews its way through boulders with its sturdy jaws. Its eyes can see in the darkness underground."
+    },
+    "types": [
+      "steel",
+      "ground"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/208.png"
+  },
+  {
+    "sinnoh": 36,
+    "national": 408,
+    "slug": "cranidos",
+    "name": "Cranidos",
+    "genus": "Head Butt Pokémon",
+    "height": 0.9,
+    "weight": 31.5,
+    "catch_rate": 45,
+    "stats": {
+      "hp": 67,
+      "attack": 125,
+      "defense": 40,
+      "special-attack": 30,
+      "special-defense": 30,
+      "speed": 58
+    },
+    "text": {
+      "diamond": "It lived in jungles around 100 million years ago. Its skull is as hard as iron.",
+      "pearl": "It was resurrected from an iron ball-like fossil. It downs prey with its head butts."
+    },
+    "types": [
+      "rock"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/408.png"
+  },
+  {
+    "sinnoh": 37,
+    "national": 409,
+    "slug": "rampardos",
+    "name": "Rampardos",
+    "genus": "Head Butt Pokémon",
+    "height": 1.6,
+    "weight": 102.5,
+    "catch_rate": 45,
+    "stats": {
+      "hp": 97,
+      "attack": 165,
+      "defense": 60,
+      "special-attack": 65,
+      "special-defense": 50,
+      "speed": 58
+    },
+    "text": {
+      "diamond": "Its powerful head butt has enough power to shatter even the most durable things upon impact.",
+      "pearl": "Its skull is as hard as iron. It is a brute that tears down jungle trees while catching prey."
+    },
+    "types": [
+      "rock"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/409.png"
+  },
+  {
+    "sinnoh": 38,
+    "national": 410,
+    "slug": "shieldon",
+    "name": "Shieldon",
+    "genus": "Shield Pokémon",
+    "height": 0.5,
+    "weight": 57.0,
+    "catch_rate": 45,
+    "stats": {
+      "hp": 30,
+      "attack": 42,
+      "defense": 118,
+      "special-attack": 42,
+      "special-defense": 88,
+      "speed": 30
+    },
+    "text": {
+      "diamond": "A Pokémon that lived in jungles around 100 million years ago. Its facial hide is extremely hard.",
+      "pearl": "It habitually polishes its face by rubbing it against tree trunks. It is weak to attacks from behind."
+    },
+    "types": [
+      "rock",
+      "steel"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/410.png"
+  },
+  {
+    "sinnoh": 39,
+    "national": 411,
+    "slug": "bastiodon",
+    "name": "Bastiodon",
+    "genus": "Shield Pokémon",
+    "height": 1.3,
+    "weight": 149.5,
+    "catch_rate": 45,
+    "stats": {
+      "hp": 60,
+      "attack": 52,
+      "defense": 168,
+      "special-attack": 47,
+      "special-defense": 138,
+      "speed": 30
+    },
+    "text": {
+      "diamond": "Any frontal attack is repulsed. It is a docile Pokémon that feeds on grass and berries.",
+      "pearl": "When attacked, they form a wall with their shieldlike faces to protect their young."
+    },
+    "types": [
+      "rock",
+      "steel"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/411.png"
+  },
+  {
+    "sinnoh": 40,
+    "national": 66,
+    "slug": "machop",
+    "name": "Machop",
+    "genus": "Superpower Pokémon",
+    "height": 0.8,
+    "weight": 19.5,
+    "catch_rate": 180,
+    "stats": {
+      "hp": 70,
+      "attack": 80,
+      "defense": 50,
+      "special-attack": 35,
+      "special-defense": 35,
+      "speed": 35
+    },
+    "text": {
+      "diamond": "It hefts a GRAVELER repeatedly to strengthen its entire body. It uses every type of martial arts.",
+      "pearl": "Its muscles never cramp however much it trains. It lives in the mountains away from humans."
+    },
+    "types": [
+      "fighting"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/66.png"
+  },
+  {
+    "sinnoh": 41,
+    "national": 67,
+    "slug": "machoke",
+    "name": "Machoke",
+    "genus": "Superpower Pokémon",
+    "height": 1.5,
+    "weight": 70.5,
+    "catch_rate": 90,
+    "stats": {
+      "hp": 80,
+      "attack": 100,
+      "defense": 70,
+      "special-attack": 50,
+      "special-defense": 60,
+      "speed": 45
+    },
+    "text": {
+      "diamond": "MACHOKE’s boundless power is very dangerous, so it wears a belt that suppresses its energy.",
+      "pearl": "It can lift a dump truck with one hand. Using that power, it helps people with heavy jobs."
+    },
+    "types": [
+      "fighting"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/67.png"
+  },
+  {
+    "sinnoh": 42,
+    "national": 68,
+    "slug": "machamp",
+    "name": "Machamp",
+    "genus": "Superpower Pokémon",
+    "height": 1.6,
+    "weight": 130.0,
+    "catch_rate": 45,
+    "stats": {
+      "hp": 90,
+      "attack": 130,
+      "defense": 80,
+      "special-attack": 65,
+      "special-defense": 85,
+      "speed": 55
+    },
+    "text": {
+      "diamond": "It punches with its four arms at blinding speed. It can launch 1,000 punches in two seconds.",
+      "pearl": "It can knock a train flying with a punch. However, it is terrible at delicate work using its fingers."
+    },
+    "types": [
+      "fighting"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/68.png"
+  },
+  {
+    "sinnoh": 43,
+    "national": 54,
+    "slug": "psyduck",
+    "name": "Psyduck",
+    "genus": "Duck Pokémon",
+    "height": 0.8,
+    "weight": 19.6,
+    "catch_rate": 190,
+    "stats": {
+      "hp": 50,
+      "attack": 52,
+      "defense": 48,
+      "special-attack": 65,
+      "special-defense": 50,
+      "speed": 55
+    },
+    "text": {
+      "diamond": "If its usual headache worsens, it starts exhibiting odd powers. It can’t remember doing so, however.",
+      "pearl": "It never remembers using its odd powers, so it always tilts its head in puzzlement."
+    },
+    "types": [
+      "water"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/54.png"
+  },
+  {
+    "sinnoh": 44,
+    "national": 55,
+    "slug": "golduck",
+    "name": "Golduck",
+    "genus": "Duck Pokémon",
+    "height": 1.7,
+    "weight": 76.6,
+    "catch_rate": 75,
+    "stats": {
+      "hp": 80,
+      "attack": 82,
+      "defense": 78,
+      "special-attack": 95,
+      "special-defense": 80,
+      "speed": 85
+    },
+    "text": {
+      "diamond": "A Pokémon that lives in lakes. It swims faster than any human swimming champion.",
+      "pearl": "The flippers of its well-developed limbs give it shocking speed. It is the best swimmer among Pokémon."
+    },
+    "types": [
+      "water"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/55.png"
+  },
+  {
+    "sinnoh": 45,
+    "national": 412,
+    "slug": "burmy",
+    "name": "Burmy",
+    "genus": "Bagworm Pokémon",
+    "height": 0.2,
+    "weight": 3.4,
+    "catch_rate": 120,
+    "stats": {
+      "hp": 40,
+      "attack": 29,
+      "defense": 45,
+      "special-attack": 29,
+      "special-defense": 45,
+      "speed": 36
+    },
+    "text": {
+      "diamond": "To shelter itself from cold, wintry winds, it covers itself with a cloak made of twigs and leaves.",
+      "pearl": "If its cloak is broken in battle, it quickly remakes the cloak with materials nearby."
+    },
+    "types": [
+      "bug"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/412.png"
+  },
+  {
+    "sinnoh": 46,
+    "national": 413,
+    "slug": "wormadam",
+    "name": "Wormadam",
+    "genus": "Bagworm Pokémon",
+    "height": 0.5,
+    "weight": 6.5,
+    "catch_rate": 45,
+    "stats": {
+      "hp": 60,
+      "attack": 59,
+      "defense": 85,
+      "special-attack": 79,
+      "special-defense": 105,
+      "speed": 36
+    },
+    "text": {
+      "diamond": "When BURMY evolved, its cloak became a part of this Pokémon’s body. The cloak is never shed.",
+      "pearl": "Its appearance changes depending on where it evolved. The materials on hand become a part of its body."
+    },
+    "types": [
+      "bug",
+      "grass"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/413.png"
+  },
+  {
+    "sinnoh": 47,
+    "national": 414,
+    "slug": "mothim",
+    "name": "Mothim",
+    "genus": "Moth Pokémon",
+    "height": 0.9,
+    "weight": 23.3,
+    "catch_rate": 45,
+    "stats": {
+      "hp": 70,
+      "attack": 94,
+      "defense": 50,
+      "special-attack": 94,
+      "special-defense": 50,
+      "speed": 66
+    },
+    "text": {
+      "diamond": "It loves the honey of flowers and steals honey collected by COMBEE.",
+      "pearl": "It does not keep a nest. It flies over fields and mountains in constant search of floral honey."
+    },
+    "types": [
+      "bug",
+      "flying"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/414.png"
+  },
+  {
+    "sinnoh": 48,
+    "national": 265,
+    "slug": "wurmple",
+    "name": "Wurmple",
+    "genus": "Worm Pokémon",
+    "height": 0.3,
+    "weight": 3.6,
+    "catch_rate": 255,
+    "stats": {
+      "hp": 45,
+      "attack": 45,
+      "defense": 35,
+      "special-attack": 20,
+      "special-defense": 30,
+      "speed": 20
+    },
+    "text": {
+      "diamond": "It loves to eat leaves. If it is attacked by a STARLY, it will defend itself with its spiked rear.",
+      "pearl": "It spits a white silk that turns sticky when it contacts air. It is used to immobilize foes."
+    },
+    "types": [
+      "bug"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/265.png"
+  },
+  {
+    "sinnoh": 49,
+    "national": 266,
+    "slug": "silcoon",
+    "name": "Silcoon",
+    "genus": "Cocoon Pokémon",
+    "height": 0.6,
+    "weight": 10.0,
+    "catch_rate": 120,
+    "stats": {
+      "hp": 50,
+      "attack": 35,
+      "defense": 55,
+      "special-attack": 25,
+      "special-defense": 25,
+      "speed": 15
+    },
+    "text": {
+      "diamond": "It anchors itself by wrapping twigs with the silk from its body. It motionlessly awaits evolution.",
+      "pearl": "It drinks dew that collects on its silk and waits for evolution. Its hard cocoon repels attacks."
+    },
+    "types": [
+      "bug"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/266.png"
+  },
+  {
+    "sinnoh": 50,
+    "national": 267,
+    "slug": "beautifly",
+    "name": "Beautifly",
+    "genus": "Butterfly Pokémon",
+    "height": 1.0,
+    "weight": 28.4,
+    "catch_rate": 45,
+    "stats": {
+      "hp": 60,
+      "attack": 70,
+      "defense": 50,
+      "special-attack": 90,
+      "special-defense": 50,
+      "speed": 65
+    },
+    "text": {
+      "diamond": "It has an aggressive nature. It stabs prey with its long, narrow mouth to drain the prey’s fluids.",
+      "pearl": "When flower fields bloom, it flits around, collecting pollen. Despite its appearance, it is savage."
+    },
+    "types": [
+      "bug",
+      "flying"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/267.png"
+  },
+  {
+    "sinnoh": 51,
+    "national": 268,
+    "slug": "cascoon",
+    "name": "Cascoon",
+    "genus": "Cocoon Pokémon",
+    "height": 0.7,
+    "weight": 11.5,
+    "catch_rate": 120,
+    "stats": {
+      "hp": 50,
+      "attack": 35,
+      "defense": 55,
+      "special-attack": 25,
+      "special-defense": 25,
+      "speed": 15
+    },
+    "text": {
+      "diamond": "It is hot inside its cocoon. All the cells in its body create the energy for it to evolve.",
+      "pearl": "Encased within its tough cocoon, it endures attacks. It never forgets the appearance of its foes."
+    },
+    "types": [
+      "bug"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/268.png"
+  },
+  {
+    "sinnoh": 52,
+    "national": 269,
+    "slug": "dustox",
+    "name": "Dustox",
+    "genus": "Poison Moth Pokémon",
+    "height": 1.2,
+    "weight": 31.6,
+    "catch_rate": 45,
+    "stats": {
+      "hp": 60,
+      "attack": 50,
+      "defense": 70,
+      "special-attack": 50,
+      "special-defense": 90,
+      "speed": 65
+    },
+    "text": {
+      "diamond": "A nocturnal Pokémon. Drawn by streetlights, they messily eat the leaves of trees lining boulevards.",
+      "pearl": "It violently flutters its wings to scatter toxic dust when attacked. It becomes active after sunset."
+    },
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/269.png"
+  },
+  {
+    "sinnoh": 53,
+    "national": 415,
+    "slug": "combee",
+    "name": "Combee",
+    "genus": "Tiny Bee Pokémon",
+    "height": 0.3,
+    "weight": 5.5,
+    "catch_rate": 120,
+    "stats": {
+      "hp": 30,
+      "attack": 30,
+      "defense": 42,
+      "special-attack": 30,
+      "special-defense": 42,
+      "speed": 70
+    },
+    "text": {
+      "diamond": "A Pokémon formed by three others. It busily carries sweet floral honey to VESPIQUEN.",
+      "pearl": "It collects and delivers honey to its colony. At night, they cluster to form a beehive and sleep."
+    },
+    "types": [
+      "bug",
+      "flying"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/415.png"
+  },
+  {
+    "sinnoh": 54,
+    "national": 416,
+    "slug": "vespiquen",
+    "name": "Vespiquen",
+    "genus": "Beehive Pokémon",
+    "height": 1.2,
+    "weight": 38.5,
+    "catch_rate": 45,
+    "stats": {
+      "hp": 70,
+      "attack": 80,
+      "defense": 102,
+      "special-attack": 80,
+      "special-defense": 102,
+      "speed": 40
+    },
+    "text": {
+      "diamond": "Its abdomen is a honeycomb for grubs. It raises its grubs on honey collected by COMBEE.",
+      "pearl": "When endangered, grubs from its six-cell honeycomb strike back. There is only one in a colony."
+    },
+    "types": [
+      "bug",
+      "flying"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/416.png"
+  },
+  {
+    "sinnoh": 55,
+    "national": 417,
+    "slug": "pachirisu",
+    "name": "Pachirisu",
+    "genus": "EleSquirrel Pokémon",
+    "height": 0.4,
+    "weight": 3.9,
+    "catch_rate": 200,
+    "stats": {
+      "hp": 60,
+      "attack": 45,
+      "defense": 70,
+      "special-attack": 45,
+      "special-defense": 90,
+      "speed": 95
+    },
+    "text": {
+      "diamond": "It makes fur balls that crackle with static electricity. It stores them with berries in tree holes.",
+      "pearl": "It makes electricity with pouches in its cheeks and shoots charges from its tail. It lives atop trees."
+    },
+    "types": [
+      "electric"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/417.png"
+  },
+  {
+    "sinnoh": 56,
+    "national": 418,
+    "slug": "buizel",
+    "name": "Buizel",
+    "genus": "Sea Weasel Pokémon",
+    "height": 0.7,
+    "weight": 29.5,
+    "catch_rate": 190,
+    "stats": {
+      "hp": 55,
+      "attack": 65,
+      "defense": 35,
+      "special-attack": 60,
+      "special-defense": 30,
+      "speed": 85
+    },
+    "text": {
+      "diamond": "It has a flotation sac that is like an inflatable collar. It floats on water with its head out.",
+      "pearl": "It swims by rotating its two tails like a screw. When it dives, its flotation sac collapses."
+    },
+    "types": [
+      "water"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/418.png"
+  },
+  {
+    "sinnoh": 57,
+    "national": 419,
+    "slug": "floatzel",
+    "name": "Floatzel",
+    "genus": "Sea Weasel Pokémon",
+    "height": 1.1,
+    "weight": 33.5,
+    "catch_rate": 75,
+    "stats": {
+      "hp": 85,
+      "attack": 105,
+      "defense": 55,
+      "special-attack": 85,
+      "special-defense": 50,
+      "speed": 115
+    },
+    "text": {
+      "diamond": "It floats using its well-developed flotation sac. It assists in the rescues of drowning people.",
+      "pearl": "Its flotation sac developed as a result of pursuing aquatic prey. It can double as a rubber raft."
+    },
+    "types": [
+      "water"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/419.png"
+  },
+  {
+    "sinnoh": 58,
+    "national": 420,
+    "slug": "cherubi",
+    "name": "Cherubi",
+    "genus": "Cherry Pokémon",
+    "height": 0.4,
+    "weight": 3.3,
+    "catch_rate": 190,
+    "stats": {
+      "hp": 45,
+      "attack": 35,
+      "defense": 45,
+      "special-attack": 62,
+      "special-defense": 53,
+      "speed": 35
+    },
+    "text": {
+      "diamond": "The small ball holds the nutrients needed for evolution. Apparently, it is very sweet and tasty.",
+      "pearl": "Sunlight colors it red. When the small ball is drained of nutrients, it shrivels to herald evolution."
+    },
+    "types": [
+      "grass"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/420.png"
+  },
+  {
+    "sinnoh": 59,
+    "national": 421,
+    "slug": "cherrim",
+    "name": "Cherrim",
+    "genus": "Blossom Pokémon",
+    "height": 0.5,
+    "weight": 9.3,
+    "catch_rate": 75,
+    "stats": {
+      "hp": 70,
+      "attack": 60,
+      "defense": 70,
+      "special-attack": 87,
+      "special-defense": 78,
+      "speed": 85
+    },
+    "text": {
+      "diamond": "It blooms during times of strong sunlight. It tries to make up for everything it endured as a bud.",
+      "pearl": "It is docile as a bud, but turns cheerful when it blooms. It folds back into a bud if sunlight wanes."
+    },
+    "types": [
+      "grass"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/421.png"
+  },
+  {
+    "sinnoh": 60,
+    "national": 422,
+    "slug": "shellos",
+    "name": "Shellos",
+    "genus": "Sea Slug Pokémon",
+    "height": 0.3,
+    "weight": 6.3,
+    "catch_rate": 190,
+    "stats": {
+      "hp": 76,
+      "attack": 48,
+      "defense": 48,
+      "special-attack": 57,
+      "special-defense": 62,
+      "speed": 34
+    },
+    "text": {
+      "diamond": "Its colors and shapes differ from region to region. In the Sinnoh region, two types are confirmed.",
+      "pearl": "It lives along bodies of water. Its body shape has changed to suit its habitat."
+    },
+    "types": [
+      "water"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/422.png"
+  },
+  {
+    "sinnoh": 61,
+    "national": 423,
+    "slug": "gastrodon",
+    "name": "Gastrodon",
+    "genus": "Sea Slug Pokémon",
+    "height": 0.9,
+    "weight": 29.9,
+    "catch_rate": 75,
+    "stats": {
+      "hp": 111,
+      "attack": 83,
+      "defense": 68,
+      "special-attack": 92,
+      "special-defense": 82,
+      "speed": 39
+    },
+    "text": {
+      "diamond": "It has a pliable body without any bones. If any part of its body is torn off, it grows right back.",
+      "pearl": "It apparently had a huge shell for protection in ancient times. It lives in shallow tidal pools."
+    },
+    "types": [
+      "water",
+      "ground"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/423.png"
+  },
+  {
+    "sinnoh": 62,
+    "national": 214,
+    "slug": "heracross",
+    "name": "Heracross",
+    "genus": "Single Horn Pokémon",
+    "height": 1.5,
+    "weight": 54.0,
+    "catch_rate": 45,
+    "stats": {
+      "hp": 80,
+      "attack": 125,
+      "defense": 75,
+      "special-attack": 40,
+      "special-defense": 95,
+      "speed": 85
+    },
+    "text": {
+      "diamond": "It gathers in forests to search for tree sap, its favorite food. It’s strong enough to hurl foes.",
+      "pearl": "With powerful legs and claws, it generates enough power to hurl foes over great distances."
+    },
+    "types": [
+      "bug",
+      "fighting"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/214.png"
+  },
+  {
+    "sinnoh": 63,
+    "national": 190,
+    "slug": "aipom",
+    "name": "Aipom",
+    "genus": "Long Tail Pokémon",
+    "height": 0.8,
+    "weight": 11.5,
+    "catch_rate": 45,
+    "stats": {
+      "hp": 55,
+      "attack": 70,
+      "defense": 55,
+      "special-attack": 40,
+      "special-defense": 55,
+      "speed": 85
+    },
+    "text": {
+      "diamond": "It uses its tail to pluck fruits that are out of reach. Its tail is more adept than its real hands.",
+      "pearl": "It lives atop giant trees. It wraps its tail around a branch so it won’t fall off while asleep."
+    },
+    "types": [
+      "normal"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/190.png"
+  },
+  {
+    "sinnoh": 64,
+    "national": 424,
+    "slug": "ambipom",
+    "name": "Ambipom",
+    "genus": "Long Tail Pokémon",
+    "height": 1.2,
+    "weight": 20.3,
+    "catch_rate": 45,
+    "stats": {
+      "hp": 75,
+      "attack": 100,
+      "defense": 66,
+      "special-attack": 60,
+      "special-defense": 66,
+      "speed": 115
+    },
+    "text": {
+      "diamond": "To eat, it deftly shucks nuts with its two tails. It rarely uses its arms now.",
+      "pearl": "They work in large colonies and make rings by linking their tails, apparently in friendship."
+    },
+    "types": [
+      "normal"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/424.png"
+  },
+  {
+    "sinnoh": 65,
+    "national": 425,
+    "slug": "drifloon",
+    "name": "Drifloon",
+    "genus": "Balloon Pokémon",
+    "height": 0.4,
+    "weight": 1.2,
+    "catch_rate": 125,
+    "stats": {
+      "hp": 90,
+      "attack": 50,
+      "defense": 34,
+      "special-attack": 60,
+      "special-defense": 44,
+      "speed": 70
+    },
+    "text": {
+      "diamond": "A Pokémon formed by the spirits of people and Pokémon. It loves damp, humid seasons.",
+      "pearl": "It tugs on the hands of children to steal them away. However, it gets pulled around instead."
+    },
+    "types": [
+      "ghost",
+      "flying"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/425.png"
+  },
+  {
+    "sinnoh": 66,
+    "national": 426,
+    "slug": "drifblim",
+    "name": "Drifblim",
+    "genus": "Blimp Pokémon",
+    "height": 1.2,
+    "weight": 15.0,
+    "catch_rate": 60,
+    "stats": {
+      "hp": 150,
+      "attack": 80,
+      "defense": 44,
+      "special-attack": 90,
+      "special-defense": 54,
+      "speed": 80
+    },
+    "text": {
+      "diamond": "It’s drowzy in daytime, but flies off in the evening in big groups. No one knows where they go.",
+      "pearl": "It carries people and Pokémon when it flies. But since it only drifts, it can end up anywhere."
+    },
+    "types": [
+      "ghost",
+      "flying"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/426.png"
+  },
+  {
+    "sinnoh": 67,
+    "national": 427,
+    "slug": "buneary",
+    "name": "Buneary",
+    "genus": "Rabbit Pokémon",
+    "height": 0.4,
+    "weight": 5.5,
+    "catch_rate": 190,
+    "stats": {
+      "hp": 55,
+      "attack": 66,
+      "defense": 44,
+      "special-attack": 44,
+      "special-defense": 56,
+      "speed": 85
+    },
+    "text": {
+      "diamond": "It slams foes by sharply uncoiling its rolled ears. It stings enough to make a grown-up cry in pain.",
+      "pearl": "When it senses danger, it perks up its ears. On cold nights, it sleeps with its head tucked into its fur."
+    },
+    "types": [
+      "normal"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/427.png"
+  },
+  {
+    "sinnoh": 68,
+    "national": 428,
+    "slug": "lopunny",
+    "name": "Lopunny",
+    "genus": "Rabbit Pokémon",
+    "height": 1.2,
+    "weight": 33.3,
+    "catch_rate": 60,
+    "stats": {
+      "hp": 65,
+      "attack": 76,
+      "defense": 84,
+      "special-attack": 54,
+      "special-defense": 96,
+      "speed": 105
+    },
+    "text": {
+      "diamond": "An extremely cautious Pokémon. It cloaks its body with its fluffy ear fur when it senses danger.",
+      "pearl": "It is very conscious of its looks and never fails to groom its ears. It runs with sprightly jumps."
+    },
+    "types": [
+      "normal"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/428.png"
+  },
+  {
+    "sinnoh": 69,
+    "national": 92,
+    "slug": "gastly",
+    "name": "Gastly",
+    "genus": "Gas Pokémon",
+    "height": 1.3,
+    "weight": 0.1,
+    "catch_rate": 190,
+    "stats": {
+      "hp": 30,
+      "attack": 35,
+      "defense": 30,
+      "special-attack": 100,
+      "special-defense": 35,
+      "speed": 80
+    },
+    "text": {
+      "diamond": "This Pokémon’s body is 95% made up of gases, which are blown away by strong gusts of wind.",
+      "pearl": "A Pokémon born from poison gases. It defeats even the largest foes by enveloping them in gas."
+    },
+    "types": [
+      "ghost",
+      "poison"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/92.png"
+  },
+  {
+    "sinnoh": 70,
+    "national": 93,
+    "slug": "haunter",
+    "name": "Haunter",
+    "genus": "Gas Pokémon",
+    "height": 1.6,
+    "weight": 0.1,
+    "catch_rate": 90,
+    "stats": {
+      "hp": 45,
+      "attack": 50,
+      "defense": 45,
+      "special-attack": 115,
+      "special-defense": 55,
+      "speed": 95
+    },
+    "text": {
+      "diamond": "It can slip through any obstacle. It lurks inside walls to keep an eye on its foes.",
+      "pearl": "It licks with its gaseous tongue to steal the victim’s life force. It lurks in darkness for prey."
+    },
+    "types": [
+      "ghost",
+      "poison"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/93.png"
+  },
+  {
+    "sinnoh": 71,
+    "national": 94,
+    "slug": "gengar",
+    "name": "Gengar",
+    "genus": "Shadow Pokémon",
+    "height": 1.5,
+    "weight": 40.5,
+    "catch_rate": 45,
+    "stats": {
+      "hp": 60,
+      "attack": 65,
+      "defense": 60,
+      "special-attack": 130,
+      "special-defense": 75,
+      "speed": 110
+    },
+    "text": {
+      "diamond": "It hides in shadows. It is said that if GENGAR is hiding, it cools the area by nearly 10 degrees F.",
+      "pearl": "Lurking in the shadowy corners of rooms, it awaits chances to steal its prey’s life force."
+    },
+    "types": [
+      "ghost",
+      "poison"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/94.png"
+  },
+  {
+    "sinnoh": 72,
+    "national": 200,
+    "slug": "misdreavus",
+    "name": "Misdreavus",
+    "genus": "Screech Pokémon",
+    "height": 0.7,
+    "weight": 1.0,
+    "catch_rate": 45,
+    "stats": {
+      "hp": 60,
+      "attack": 60,
+      "defense": 60,
+      "special-attack": 85,
+      "special-defense": 85,
+      "speed": 85
+    },
+    "text": {
+      "diamond": "It loves to sneak up on people late at night, then startle them with its shrieklike cry.",
+      "pearl": "It gets nourishment from fear that it absorbs into its red orbs. In daytime, it sleeps in darkness."
+    },
+    "types": [
+      "ghost"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/200.png"
+  },
+  {
+    "sinnoh": 73,
+    "national": 429,
+    "slug": "mismagius",
+    "name": "Mismagius",
+    "genus": "Magical Pokémon",
+    "height": 0.9,
+    "weight": 4.4,
+    "catch_rate": 45,
+    "stats": {
+      "hp": 60,
+      "attack": 60,
+      "defense": 60,
+      "special-attack": 105,
+      "special-defense": 105,
+      "speed": 105
+    },
+    "text": {
+      "diamond": "Its cries sound like incantations. Those hearing it are tormented by headaches and hallucinations.",
+      "pearl": "It chants incantations. While they usually torment targets, some chants bring happiness."
+    },
+    "types": [
+      "ghost"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/429.png"
+  },
+  {
+    "sinnoh": 74,
+    "national": 198,
+    "slug": "murkrow",
+    "name": "Murkrow",
+    "genus": "Darkness Pokémon",
+    "height": 0.5,
+    "weight": 2.1,
+    "catch_rate": 30,
+    "stats": {
+      "hp": 60,
+      "attack": 85,
+      "defense": 42,
+      "special-attack": 85,
+      "special-defense": 42,
+      "speed": 91
+    },
+    "text": {
+      "diamond": "It is believed that seeing this Pokémon at night will bring about ominous occurrences.",
+      "pearl": "It appears near travelers to lure them into deep forests. It is said to carry misfortune."
+    },
+    "types": [
+      "dark",
+      "flying"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/198.png"
+  },
+  {
+    "sinnoh": 75,
+    "national": 430,
+    "slug": "honchkrow",
+    "name": "Honchkrow",
+    "genus": "Big Boss Pokémon",
+    "height": 0.9,
+    "weight": 27.3,
+    "catch_rate": 30,
+    "stats": {
+      "hp": 100,
+      "attack": 125,
+      "defense": 52,
+      "special-attack": 105,
+      "special-defense": 52,
+      "speed": 71
+    },
+    "text": {
+      "diamond": "Becoming active at night, it is known to swarm with numerous MURKROW in tow.",
+      "pearl": "It makes its MURKROW cronies bring it food. It idles its time away, grooming itself in its nest."
+    },
+    "types": [
+      "dark",
+      "flying"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/430.png"
+  },
+  {
+    "sinnoh": 76,
+    "national": 431,
+    "slug": "glameow",
+    "name": "Glameow",
+    "genus": "Catty Pokémon",
+    "height": 0.5,
+    "weight": 3.9,
+    "catch_rate": 190,
+    "stats": {
+      "hp": 49,
+      "attack": 55,
+      "defense": 42,
+      "special-attack": 42,
+      "special-defense": 37,
+      "speed": 85
+    },
+    "text": {
+      "diamond": "It claws if displeased and purrs when affectionate. Its fickleness is very popular among some.",
+      "pearl": "With its sharp glare, it puts foes in a mild hypnotic state. It is a very fickle Pokémon."
+    },
+    "types": [
+      "normal"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/431.png"
+  },
+  {
+    "sinnoh": 77,
+    "national": 432,
+    "slug": "purugly",
+    "name": "Purugly",
+    "genus": "Tiger Cat Pokémon",
+    "height": 1.0,
+    "weight": 43.8,
+    "catch_rate": 75,
+    "stats": {
+      "hp": 71,
+      "attack": 82,
+      "defense": 64,
+      "special-attack": 64,
+      "special-defense": 59,
+      "speed": 112
+    },
+    "text": {
+      "diamond": "It is a brazen brute that barges its way into another Pokémon’s nest and claims it as its own.",
+      "pearl": "To make itself appear intimidatingly beefy, it tightly cinches its waist with its twin tails."
+    },
+    "types": [
+      "normal"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/432.png"
+  },
+  {
+    "sinnoh": 78,
+    "national": 118,
+    "slug": "goldeen",
+    "name": "Goldeen",
+    "genus": "Goldfish Pokémon",
+    "height": 0.6,
+    "weight": 15.0,
+    "catch_rate": 225,
+    "stats": {
+      "hp": 45,
+      "attack": 67,
+      "defense": 60,
+      "special-attack": 35,
+      "special-defense": 50,
+      "speed": 63
+    },
+    "text": {
+      "diamond": "It swims elegantly by flittering its tail fin as if it were a dress. It has the look of a queen.",
+      "pearl": "It swims at a steady 5 knots. If it senses danger, it will strike back with its sharp horn."
+    },
+    "types": [
+      "water"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/118.png"
+  },
+  {
+    "sinnoh": 79,
+    "national": 119,
+    "slug": "seaking",
+    "name": "Seaking",
+    "genus": "Goldfish Pokémon",
+    "height": 1.3,
+    "weight": 39.0,
+    "catch_rate": 60,
+    "stats": {
+      "hp": 80,
+      "attack": 92,
+      "defense": 65,
+      "special-attack": 65,
+      "special-defense": 80,
+      "speed": 68
+    },
+    "text": {
+      "diamond": "It makes its nest by hollowing out boulders in streams with its horn. It defends its eggs with its life.",
+      "pearl": "To protect its family, it will fight with its drill-sharp horn. It lives in hollowed rocks in streams."
+    },
+    "types": [
+      "water"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/119.png"
+  },
+  {
+    "sinnoh": 80,
+    "national": 339,
+    "slug": "barboach",
+    "name": "Barboach",
+    "genus": "Whiskers Pokémon",
+    "height": 0.4,
+    "weight": 1.9,
+    "catch_rate": 190,
+    "stats": {
+      "hp": 50,
+      "attack": 48,
+      "defense": 43,
+      "special-attack": 46,
+      "special-defense": 41,
+      "speed": 60
+    },
+    "text": {
+      "diamond": "It coats its entire body with a slimy fluid so it can squirm and slip away if grabbed.",
+      "pearl": "Its whiskers make a superb radar. They are used to locate prey, even in the murkiest of water."
+    },
+    "types": [
+      "water",
+      "ground"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/339.png"
+  },
+  {
+    "sinnoh": 81,
+    "national": 340,
+    "slug": "whiscash",
+    "name": "Whiscash",
+    "genus": "Whiskers Pokémon",
+    "height": 0.9,
+    "weight": 23.6,
+    "catch_rate": 75,
+    "stats": {
+      "hp": 110,
+      "attack": 78,
+      "defense": 73,
+      "special-attack": 76,
+      "special-defense": 71,
+      "speed": 60
+    },
+    "text": {
+      "diamond": "It is very territorial. It repels foes by setting off tremors that extend over a three-mile radius.",
+      "pearl": "As a result of causing tremors by thrashing about, it developed the ability to foretell real quakes."
+    },
+    "types": [
+      "water",
+      "ground"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/340.png"
+  },
+  {
+    "sinnoh": 82,
+    "national": 433,
+    "slug": "chingling",
+    "name": "Chingling",
+    "genus": "Bell Pokémon",
+    "height": 0.2,
+    "weight": 0.6,
+    "catch_rate": 120,
+    "stats": {
+      "hp": 45,
+      "attack": 30,
+      "defense": 50,
+      "special-attack": 65,
+      "special-defense": 50,
+      "speed": 45
+    },
+    "text": {
+      "diamond": "It emits cries by agitating an orb at the back of its throat. It moves with flouncing hops.",
+      "pearl": "Each time it hops, it makes a ringing sound. It deafens foes by emitting high-frequency cries."
+    },
+    "types": [
+      "psychic"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/433.png"
+  },
+  {
+    "sinnoh": 83,
+    "national": 358,
+    "slug": "chimecho",
+    "name": "Chimecho",
+    "genus": "Wind Chime Pokémon",
+    "height": 0.6,
+    "weight": 1.0,
+    "catch_rate": 45,
+    "stats": {
+      "hp": 65,
+      "attack": 50,
+      "defense": 70,
+      "special-attack": 95,
+      "special-defense": 80,
+      "speed": 65
+    },
+    "text": {
+      "diamond": "To knock foes flying, it makes the air shudder with its cries. It converses using seven cries.",
+      "pearl": "Emitting ultrasonic cries, it floats on winds to travel great distances."
+    },
+    "types": [
+      "psychic"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/358.png"
+  },
+  {
+    "sinnoh": 84,
+    "national": 434,
+    "slug": "stunky",
+    "name": "Stunky",
+    "genus": "Skunk Pokémon",
+    "height": 0.4,
+    "weight": 19.2,
+    "catch_rate": 225,
+    "stats": {
+      "hp": 63,
+      "attack": 63,
+      "defense": 47,
+      "special-attack": 41,
+      "special-defense": 41,
+      "speed": 74
+    },
+    "text": {
+      "diamond": "It protects itself by spraying a noxious fluid from its rear. The stench lingers for 24 hours.",
+      "pearl": "It sprays a nose-curling, stinky fluid from its rear to repel attackers."
+    },
+    "types": [
+      "poison",
+      "dark"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/434.png"
+  },
+  {
+    "sinnoh": 85,
+    "national": 435,
+    "slug": "skuntank",
+    "name": "Skuntank",
+    "genus": "Skunk Pokémon",
+    "height": 1.0,
+    "weight": 38.0,
+    "catch_rate": 60,
+    "stats": {
+      "hp": 103,
+      "attack": 93,
+      "defense": 67,
+      "special-attack": 71,
+      "special-defense": 61,
+      "speed": 84
+    },
+    "text": {
+      "diamond": "It sprays a vile-smelling fluid from the tip of its tail to attack. Its range is over 160 feet.",
+      "pearl": "It sprays a stinky fluid from its tail. The fluid smells worse the longer it is allowed to fester."
+    },
+    "types": [
+      "poison",
+      "dark"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/435.png"
+  },
+  {
+    "sinnoh": 86,
+    "national": 307,
+    "slug": "meditite",
+    "name": "Meditite",
+    "genus": "Meditate Pokémon",
+    "height": 0.6,
+    "weight": 11.2,
+    "catch_rate": 180,
+    "stats": {
+      "hp": 30,
+      "attack": 40,
+      "defense": 55,
+      "special-attack": 40,
+      "special-defense": 55,
+      "speed": 60
+    },
+    "text": {
+      "diamond": "It eats just one berry a day. By enduring hunger, its spirit is tempered and made sharper.",
+      "pearl": "It never misses its daily yoga workouts, and it heightens its spiritual power through meditation."
+    },
+    "types": [
+      "fighting",
+      "psychic"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/307.png"
+  },
+  {
+    "sinnoh": 87,
+    "national": 308,
+    "slug": "medicham",
+    "name": "Medicham",
+    "genus": "Meditate Pokémon",
+    "height": 1.3,
+    "weight": 31.5,
+    "catch_rate": 90,
+    "stats": {
+      "hp": 60,
+      "attack": 60,
+      "defense": 75,
+      "special-attack": 60,
+      "special-defense": 75,
+      "speed": 80
+    },
+    "text": {
+      "diamond": "Through yoga training, it has honed its sixth sense. Its movements are elegant.",
+      "pearl": "Through daily meditation, it hones its spiritual power. It can sense what others are thinking."
+    },
+    "types": [
+      "fighting",
+      "psychic"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/308.png"
+  },
+  {
+    "sinnoh": 88,
+    "national": 436,
+    "slug": "bronzor",
+    "name": "Bronzor",
+    "genus": "Bronze Pokémon",
+    "height": 0.5,
+    "weight": 60.5,
+    "catch_rate": 255,
+    "stats": {
+      "hp": 57,
+      "attack": 24,
+      "defense": 86,
+      "special-attack": 24,
+      "special-defense": 86,
+      "speed": 23
+    },
+    "text": {
+      "diamond": "Implements shaped like it were discovered in ancient tombs. It is unknown if they are related.",
+      "pearl": "X-ray photos were taken to check its body structure. Nothing appeared, however."
+    },
+    "types": [
+      "steel",
+      "psychic"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/436.png"
+  },
+  {
+    "sinnoh": 89,
+    "national": 437,
+    "slug": "bronzong",
+    "name": "Bronzong",
+    "genus": "Bronze Bell Pokémon",
+    "height": 1.3,
+    "weight": 187.0,
+    "catch_rate": 90,
+    "stats": {
+      "hp": 67,
+      "attack": 89,
+      "defense": 116,
+      "special-attack": 79,
+      "special-defense": 116,
+      "speed": 33
+    },
+    "text": {
+      "diamond": "One caused a news sensation when it was dug up at a construction site after a 2,000-year sleep.",
+      "pearl": "It can summon rain clouds. People long ago revered it as the bringer of plentiful harvests."
+    },
+    "types": [
+      "steel",
+      "psychic"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/437.png"
+  },
+  {
+    "sinnoh": 90,
+    "national": 77,
+    "slug": "ponyta",
+    "name": "Ponyta",
+    "genus": "Fire Horse Pokémon",
+    "height": 1.0,
+    "weight": 30.0,
+    "catch_rate": 190,
+    "stats": {
+      "hp": 50,
+      "attack": 85,
+      "defense": 55,
+      "special-attack": 65,
+      "special-defense": 65,
+      "speed": 90
+    },
+    "text": {
+      "diamond": "About an hour after birth, its fiery mane and tail grow out, giving it an impressive appearance.",
+      "pearl": "Its legs grow strong while it chases after its parent. It runs in fields and mountains all day."
+    },
+    "types": [
+      "fire"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/77.png"
+  },
+  {
+    "sinnoh": 91,
+    "national": 78,
+    "slug": "rapidash",
+    "name": "Rapidash",
+    "genus": "Fire Horse Pokémon",
+    "height": 1.7,
+    "weight": 95.0,
+    "catch_rate": 60,
+    "stats": {
+      "hp": 65,
+      "attack": 100,
+      "defense": 70,
+      "special-attack": 80,
+      "special-defense": 80,
+      "speed": 105
+    },
+    "text": {
+      "diamond": "It gallops at nearly 150 mph. With its mane blazing ferociously, it races as if it were an arrow.",
+      "pearl": "It has astounding acceleration. From a standstill, it can reach top speed within 10 steps."
+    },
+    "types": [
+      "fire"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/78.png"
+  },
+  {
+    "sinnoh": 92,
+    "national": 438,
+    "slug": "bonsly",
+    "name": "Bonsly",
+    "genus": "Bonsai Pokémon",
+    "height": 0.5,
+    "weight": 15.0,
+    "catch_rate": 255,
+    "stats": {
+      "hp": 50,
+      "attack": 80,
+      "defense": 95,
+      "special-attack": 10,
+      "special-defense": 45,
+      "speed": 10
+    },
+    "text": {
+      "diamond": "It looks as if it is always crying. It is actually adjusting its body’s fluid levels by eliminating excess.",
+      "pearl": "It prefers arid environments. It leaks water from its eyes to adjust its body’s fluid levels."
+    },
+    "types": [
+      "rock"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/438.png"
+  },
+  {
+    "sinnoh": 93,
+    "national": 185,
+    "slug": "sudowoodo",
+    "name": "Sudowoodo",
+    "genus": "Imitation Pokémon",
+    "height": 1.2,
+    "weight": 38.0,
+    "catch_rate": 65,
+    "stats": {
+      "hp": 70,
+      "attack": 100,
+      "defense": 115,
+      "special-attack": 30,
+      "special-defense": 65,
+      "speed": 30
+    },
+    "text": {
+      "diamond": "Despite appearing to be a tree, its body is closer to rocks and stones. It is very weak to water.",
+      "pearl": "It stands along paths pretending to be a tree. If it starts raining, it seems to disappear."
+    },
+    "types": [
+      "rock"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/185.png"
+  },
+  {
+    "sinnoh": 94,
+    "national": 439,
+    "slug": "mime-jr",
+    "name": "Mime Jr.",
+    "genus": "Mime Pokémon",
+    "height": 0.6,
+    "weight": 13.0,
+    "catch_rate": 145,
+    "stats": {
+      "hp": 20,
+      "attack": 25,
+      "defense": 45,
+      "special-attack": 70,
+      "special-defense": 90,
+      "speed": 60
+    },
+    "text": {
+      "diamond": "It habitually mimics foes. Once mimicked, the foe cannot take its eyes off this Pokémon.",
+      "pearl": "It likes places where people gather. It mimics foes to confuse them, then makes its getaway."
+    },
+    "types": [
+      "psychic"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/439.png"
+  },
+  {
+    "sinnoh": 95,
+    "national": 122,
+    "slug": "mr-mime",
+    "name": "Mr. Mime",
+    "genus": "Barrier Pokémon",
+    "height": 1.3,
+    "weight": 54.5,
+    "catch_rate": 45,
+    "stats": {
+      "hp": 40,
+      "attack": 45,
+      "defense": 65,
+      "special-attack": 100,
+      "special-defense": 120,
+      "speed": 90
+    },
+    "text": {
+      "diamond": "It is a pantomime expert that can create invisible but solid walls using miming gestures.",
+      "pearl": "Emanations from its fingertips solidify the air into invisible walls that repel even harsh attacks."
+    },
+    "types": [
+      "psychic"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/122.png"
+  },
+  {
+    "sinnoh": 96,
+    "national": 440,
+    "slug": "happiny",
+    "name": "Happiny",
+    "genus": "Playhouse Pokémon",
+    "height": 0.6,
+    "weight": 24.4,
+    "catch_rate": 130,
+    "stats": {
+      "hp": 100,
+      "attack": 5,
+      "defense": 5,
+      "special-attack": 15,
+      "special-defense": 65,
+      "speed": 30
+    },
+    "text": {
+      "diamond": "It loves round white things. It carries an egg-shaped rock in imitation of CHANSEY.",
+      "pearl": "It carries a round, egg-shaped rock in its belly pouch and gives the rock to its friends."
+    },
+    "types": [
+      "normal"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/440.png"
+  },
+  {
+    "sinnoh": 97,
+    "national": 113,
+    "slug": "chansey",
+    "name": "Chansey",
+    "genus": "Egg Pokémon",
+    "height": 1.1,
+    "weight": 34.6,
+    "catch_rate": 30,
+    "stats": {
+      "hp": 250,
+      "attack": 5,
+      "defense": 5,
+      "special-attack": 35,
+      "special-defense": 105,
+      "speed": 50
+    },
+    "text": {
+      "diamond": "It is said to deliver happiness. Being compassionate, it shares its eggs with injured people.",
+      "pearl": "It lays several eggs a day and won’t share them with those who have evil in their hearts."
+    },
+    "types": [
+      "normal"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/113.png"
+  },
+  {
+    "sinnoh": 98,
+    "national": 242,
+    "slug": "blissey",
+    "name": "Blissey",
+    "genus": "Happiness Pokémon",
+    "height": 1.5,
+    "weight": 46.8,
+    "catch_rate": 30,
+    "stats": {
+      "hp": 255,
+      "attack": 10,
+      "defense": 10,
+      "special-attack": 75,
+      "special-defense": 135,
+      "speed": 55
+    },
+    "text": {
+      "diamond": "This kindhearted Pokémon nurses sick Pokémon to health. It senses feelings of sadness.",
+      "pearl": "It is a Pokémon that delivers happiness. Eating its egg is said to make one kind to everyone."
+    },
+    "types": [
+      "normal"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/242.png"
+  },
+  {
+    "sinnoh": 99,
+    "national": 173,
+    "slug": "cleffa",
+    "name": "Cleffa",
+    "genus": "Star Shape Pokémon",
+    "height": 0.3,
+    "weight": 3.0,
+    "catch_rate": 150,
+    "stats": {
+      "hp": 50,
+      "attack": 25,
+      "defense": 28,
+      "special-attack": 45,
+      "special-defense": 55,
+      "speed": 15
+    },
+    "text": {
+      "diamond": "Its silhouette is like a star. It is believed to arrive riding on shooting stars.",
+      "pearl": "Many appear when the night skies are filled with shooting stars. They disappear with sunrise."
+    },
+    "types": [
+      "normal"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/173.png"
+  },
+  {
+    "sinnoh": 100,
+    "national": 35,
+    "slug": "clefairy",
+    "name": "Clefairy",
+    "genus": "Fairy Pokémon",
+    "height": 0.6,
+    "weight": 7.5,
+    "catch_rate": 150,
+    "stats": {
+      "hp": 70,
+      "attack": 45,
+      "defense": 48,
+      "special-attack": 60,
+      "special-defense": 65,
+      "speed": 35
+    },
+    "text": {
+      "diamond": "Thought to live with others on quiet mountains, it is popular for its adorable nature.",
+      "pearl": "It flies using the wings on its back to collect moonlight. This Pokémon is difficult to find."
+    },
+    "types": [
+      "normal"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/35.png"
+  },
+  {
+    "sinnoh": 101,
+    "national": 36,
+    "slug": "clefable",
+    "name": "Clefable",
+    "genus": "Fairy Pokémon",
+    "height": 1.3,
+    "weight": 40.0,
+    "catch_rate": 25,
+    "stats": {
+      "hp": 95,
+      "attack": 70,
+      "defense": 73,
+      "special-attack": 85,
+      "special-defense": 90,
+      "speed": 60
+    },
+    "text": {
+      "diamond": "Rarely seen by people, it is said to be drawn by the full moon to play at deserted lakes.",
+      "pearl": "Its hearing is so acute it can hear a pin drop over half a mile away. It lives on quiet mountains."
+    },
+    "types": [
+      "normal"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/36.png"
+  },
+  {
+    "sinnoh": 102,
+    "national": 441,
+    "slug": "chatot",
+    "name": "Chatot",
+    "genus": "Music Note Pokémon",
+    "height": 0.5,
+    "weight": 1.9,
+    "catch_rate": 30,
+    "stats": {
+      "hp": 76,
+      "attack": 65,
+      "defense": 45,
+      "special-attack": 92,
+      "special-defense": 42,
+      "speed": 91
+    },
+    "text": {
+      "diamond": "It can learn and speak human words. If they gather, they all learn the same saying.",
+      "pearl": "It keeps rhythm by flicking its tail feathers like a metronome. It imitates human speech."
+    },
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/441.png"
+  },
+  {
+    "sinnoh": 103,
+    "national": 172,
+    "slug": "pichu",
+    "name": "Pichu",
+    "genus": "Tiny Mouse Pokémon",
+    "height": 0.3,
+    "weight": 2.0,
+    "catch_rate": 190,
+    "stats": {
+      "hp": 20,
+      "attack": 40,
+      "defense": 15,
+      "special-attack": 35,
+      "special-defense": 35,
+      "speed": 60
+    },
+    "text": {
+      "diamond": "The electric pouches on its cheeks are still small. They cannot store much electricity yet.",
+      "pearl": "It plays with others by touching tails and setting off sparks. This appears to be a test of courage."
+    },
+    "types": [
+      "electric"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/172.png"
+  },
+  {
+    "sinnoh": 104,
+    "national": 25,
+    "slug": "pikachu",
+    "name": "Pikachu",
+    "genus": "Mouse Pokémon",
+    "height": 0.4,
+    "weight": 6.0,
+    "catch_rate": 190,
+    "stats": {
+      "hp": 35,
+      "attack": 55,
+      "defense": 30,
+      "special-attack": 50,
+      "special-defense": 40,
+      "speed": 90
+    },
+    "text": {
+      "diamond": "It lives in forests with others. It stores electricity in the pouches on its cheeks.",
+      "pearl": "If it looses crackling power from the electric pouches on its cheeks, it is being wary."
+    },
+    "types": [
+      "electric"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/25.png"
+  },
+  {
+    "sinnoh": 105,
+    "national": 26,
+    "slug": "raichu",
+    "name": "Raichu",
+    "genus": "Mouse Pokémon",
+    "height": 0.8,
+    "weight": 30.0,
+    "catch_rate": 75,
+    "stats": {
+      "hp": 60,
+      "attack": 90,
+      "defense": 55,
+      "special-attack": 90,
+      "special-defense": 80,
+      "speed": 100
+    },
+    "text": {
+      "diamond": "It turns aggressive if it has too much electricity in its body. It discharges power through its tail.",
+      "pearl": "It can loose 100,000-volt bursts of electricity, instantly downing foes several times its size."
+    },
+    "types": [
+      "electric"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/26.png"
+  },
+  {
+    "sinnoh": 106,
+    "national": 163,
+    "slug": "hoothoot",
+    "name": "Hoothoot",
+    "genus": "Owl Pokémon",
+    "height": 0.7,
+    "weight": 21.2,
+    "catch_rate": 255,
+    "stats": {
+      "hp": 60,
+      "attack": 30,
+      "defense": 30,
+      "special-attack": 36,
+      "special-defense": 56,
+      "speed": 50
+    },
+    "text": {
+      "diamond": "It always stands on one foot. Even when attacked, it does not brace itself using both feet.",
+      "pearl": "It switches its standing foot so quickly, it can’t be seen. It cries at the same time every day."
+    },
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/163.png"
+  },
+  {
+    "sinnoh": 107,
+    "national": 164,
+    "slug": "noctowl",
+    "name": "Noctowl",
+    "genus": "Owl Pokémon",
+    "height": 1.6,
+    "weight": 40.8,
+    "catch_rate": 90,
+    "stats": {
+      "hp": 100,
+      "attack": 50,
+      "defense": 50,
+      "special-attack": 76,
+      "special-defense": 96,
+      "speed": 70
+    },
+    "text": {
+      "diamond": "Its eyes are special. They can pick out objects as long as there is the tiniest amount of light.",
+      "pearl": "If it flips its head upside down, it’s a sign that it is engaged in very complex thinking."
+    },
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/164.png"
+  },
+  {
+    "sinnoh": 108,
+    "national": 442,
+    "slug": "spiritomb",
+    "name": "Spiritomb",
+    "genus": "Forbidden Pokémon",
+    "height": 1.0,
+    "weight": 108.0,
+    "catch_rate": 100,
+    "stats": {
+      "hp": 50,
+      "attack": 92,
+      "defense": 108,
+      "special-attack": 92,
+      "special-defense": 108,
+      "speed": 35
+    },
+    "text": {
+      "diamond": "A Pokémon that was formed by 108 spirits. It is bound to a fissure in an odd keystone.",
+      "pearl": "It was bound to a fissure in an odd keystone as punishment for misdeeds 500 years ago."
+    },
+    "types": [
+      "ghost",
+      "dark"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/442.png"
+  },
+  {
+    "sinnoh": 109,
+    "national": 443,
+    "slug": "gible",
+    "name": "Gible",
+    "genus": "Land Shark Pokémon",
+    "height": 0.7,
+    "weight": 20.5,
+    "catch_rate": 45,
+    "stats": {
+      "hp": 58,
+      "attack": 70,
+      "defense": 45,
+      "special-attack": 40,
+      "special-defense": 45,
+      "speed": 42
+    },
+    "text": {
+      "diamond": "It nests in small, horizontal holes in cave walls. It pounces to catch prey that stray too close.",
+      "pearl": "It once lived in the tropics. To avoid the cold, it lives in caves warmed by geothermal heat."
+    },
+    "types": [
+      "dragon",
+      "ground"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/443.png"
+  },
+  {
+    "sinnoh": 110,
+    "national": 444,
+    "slug": "gabite",
+    "name": "Gabite",
+    "genus": "Cave Pokémon",
+    "height": 1.4,
+    "weight": 56.0,
+    "catch_rate": 45,
+    "stats": {
+      "hp": 68,
+      "attack": 90,
+      "defense": 65,
+      "special-attack": 50,
+      "special-defense": 55,
+      "speed": 82
+    },
+    "text": {
+      "diamond": "There is a long-held belief that medicine made from its scales will heal even incurable illnesses.",
+      "pearl": "It habitually digs up and hoards gems in its nest. Its loot is constantly targeted by thieves."
+    },
+    "types": [
+      "dragon",
+      "ground"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/444.png"
+  },
+  {
+    "sinnoh": 111,
+    "national": 445,
+    "slug": "garchomp",
+    "name": "Garchomp",
+    "genus": "Mach Pokémon",
+    "height": 1.9,
+    "weight": 95.0,
+    "catch_rate": 45,
+    "stats": {
+      "hp": 108,
+      "attack": 130,
+      "defense": 95,
+      "special-attack": 80,
+      "special-defense": 85,
+      "speed": 102
+    },
+    "text": {
+      "diamond": "When it folds up its body and extends its wings, it looks like a jet plane. It flies at sonic speed.",
+      "pearl": "It flies at speeds equal to a jet fighter plane. It never allows its prey to escape."
+    },
+    "types": [
+      "dragon",
+      "ground"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/445.png"
+  },
+  {
+    "sinnoh": 112,
+    "national": 446,
+    "slug": "munchlax",
+    "name": "Munchlax",
+    "genus": "Big Eater Pokémon",
+    "height": 0.6,
+    "weight": 105.0,
+    "catch_rate": 50,
+    "stats": {
+      "hp": 135,
+      "attack": 85,
+      "defense": 40,
+      "special-attack": 40,
+      "special-defense": 85,
+      "speed": 5
+    },
+    "text": {
+      "diamond": "It wolfs down its weight in food once a day, swallowing food whole with almost no chewing.",
+      "pearl": "It hides food under its long body hair. However, it forgets it has hidden the food."
+    },
+    "types": [
+      "normal"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/446.png"
+  },
+  {
+    "sinnoh": 113,
+    "national": 143,
+    "slug": "snorlax",
+    "name": "Snorlax",
+    "genus": "Sleeping Pokémon",
+    "height": 2.1,
+    "weight": 460.0,
+    "catch_rate": 25,
+    "stats": {
+      "hp": 160,
+      "attack": 110,
+      "defense": 65,
+      "special-attack": 65,
+      "special-defense": 110,
+      "speed": 30
+    },
+    "text": {
+      "diamond": "Its stomach can digest any kind of food, even if it happens to be moldy or rotten.",
+      "pearl": "It stops eating only to sleep. It doesn’t feel full unless it eats nearly 900 pounds a day."
+    },
+    "types": [
+      "normal"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/143.png"
+  },
+  {
+    "sinnoh": 114,
+    "national": 201,
+    "slug": "unown",
+    "name": "Unown",
+    "genus": "Symbol Pokémon",
+    "height": 0.5,
+    "weight": 5.0,
+    "catch_rate": 225,
+    "stats": {
+      "hp": 48,
+      "attack": 72,
+      "defense": 48,
+      "special-attack": 72,
+      "special-defense": 48,
+      "speed": 48
+    },
+    "text": {
+      "diamond": "Shaped like ancient writing, it is a huge mystery whether language or UNOWN came first.",
+      "pearl": "They seem to communicate among each other telepathically. They are always found stuck on walls."
+    },
+    "types": [
+      "psychic"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/201.png"
+  },
+  {
+    "sinnoh": 115,
+    "national": 447,
+    "slug": "riolu",
+    "name": "Riolu",
+    "genus": "Emanation Pokémon",
+    "height": 0.7,
+    "weight": 20.2,
+    "catch_rate": 75,
+    "stats": {
+      "hp": 40,
+      "attack": 70,
+      "defense": 40,
+      "special-attack": 35,
+      "special-defense": 40,
+      "speed": 60
+    },
+    "text": {
+      "diamond": "The aura that emanates from its body intensifies to alert others if it is afraid or sad.",
+      "pearl": "Its body is lithe yet powerful. It can crest three mountains and cross two canyons in one night."
+    },
+    "types": [
+      "fighting"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/447.png"
+  },
+  {
+    "sinnoh": 116,
+    "national": 448,
+    "slug": "lucario",
+    "name": "Lucario",
+    "genus": "Aura Pokémon",
+    "height": 1.2,
+    "weight": 54.0,
+    "catch_rate": 45,
+    "stats": {
+      "hp": 70,
+      "attack": 110,
+      "defense": 70,
+      "special-attack": 115,
+      "special-defense": 70,
+      "speed": 90
+    },
+    "text": {
+      "diamond": "It has the ability to sense the auras of all things. It understands human speech.",
+      "pearl": "By catching the aura emanating from others, it can read their thoughts and movements."
+    },
+    "types": [
+      "fighting",
+      "steel"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/448.png"
+  },
+  {
+    "sinnoh": 117,
+    "national": 194,
+    "slug": "wooper",
+    "name": "Wooper",
+    "genus": "Water Fish Pokémon",
+    "height": 0.4,
+    "weight": 8.5,
+    "catch_rate": 255,
+    "stats": {
+      "hp": 55,
+      "attack": 45,
+      "defense": 45,
+      "special-attack": 25,
+      "special-defense": 25,
+      "speed": 15
+    },
+    "text": {
+      "diamond": "It lives in cold water, half burying itself in mud at the bottom to sleep.",
+      "pearl": "When the temperature cools in the evening, they emerge from water to seek food along the shore."
+    },
+    "types": [
+      "water",
+      "ground"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/194.png"
+  },
+  {
+    "sinnoh": 118,
+    "national": 195,
+    "slug": "quagsire",
+    "name": "Quagsire",
+    "genus": "Water Fish Pokémon",
+    "height": 1.4,
+    "weight": 75.0,
+    "catch_rate": 90,
+    "stats": {
+      "hp": 95,
+      "attack": 85,
+      "defense": 85,
+      "special-attack": 65,
+      "special-defense": 65,
+      "speed": 35
+    },
+    "text": {
+      "diamond": "It has a sluggish nature. It lies at the river’s bottom, waiting for prey to stray into its mouth.",
+      "pearl": "A dim-witted Pokémon. It doesn’t care if it bumps its head into boats or rocks while swimming."
+    },
+    "types": [
+      "water",
+      "ground"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/195.png"
+  },
+  {
+    "sinnoh": 119,
+    "national": 278,
+    "slug": "wingull",
+    "name": "Wingull",
+    "genus": "Seagull Pokémon",
+    "height": 0.6,
+    "weight": 9.5,
+    "catch_rate": 190,
+    "stats": {
+      "hp": 40,
+      "attack": 30,
+      "defense": 30,
+      "special-attack": 55,
+      "special-defense": 30,
+      "speed": 85
+    },
+    "text": {
+      "diamond": "It makes its nest on steep sea cliffs. Riding updrafts, it soars to great heights.",
+      "pearl": "Catching sea winds with its long wings, it soars as if it were a glider. It folds its wings to rest."
+    },
+    "types": [
+      "water",
+      "flying"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/278.png"
+  },
+  {
+    "sinnoh": 120,
+    "national": 279,
+    "slug": "pelipper",
+    "name": "Pelipper",
+    "genus": "Water Bird Pokémon",
+    "height": 1.2,
+    "weight": 28.0,
+    "catch_rate": 45,
+    "stats": {
+      "hp": 60,
+      "attack": 50,
+      "defense": 100,
+      "special-attack": 85,
+      "special-defense": 70,
+      "speed": 65
+    },
+    "text": {
+      "diamond": "It dips its large bill in the sea, then scoops up numerous prey along with water.",
+      "pearl": "It acts as a delivery service by carrying small Pokémon in its bill. It bobs on the waves to rest."
+    },
+    "types": [
+      "water",
+      "flying"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/279.png"
+  },
+  {
+    "sinnoh": 121,
+    "national": 203,
+    "slug": "girafarig",
+    "name": "Girafarig",
+    "genus": "Long Neck Pokémon",
+    "height": 1.5,
+    "weight": 41.5,
+    "catch_rate": 60,
+    "stats": {
+      "hp": 70,
+      "attack": 80,
+      "defense": 65,
+      "special-attack": 90,
+      "special-defense": 65,
+      "speed": 85
+    },
+    "text": {
+      "diamond": "Its tail also has a small brain. It bites to repel any foe trying to sneak up on it from behind.",
+      "pearl": "While it sleeps, the head on its tail keeps watch. The tail doesn’t need to sleep."
+    },
+    "types": [
+      "normal",
+      "psychic"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/203.png"
+  },
+  {
+    "sinnoh": 122,
+    "national": 449,
+    "slug": "hippopotas",
+    "name": "Hippopotas",
+    "genus": "Hippo Pokémon",
+    "height": 0.8,
+    "weight": 49.5,
+    "catch_rate": 140,
+    "stats": {
+      "hp": 68,
+      "attack": 72,
+      "defense": 78,
+      "special-attack": 38,
+      "special-defense": 42,
+      "speed": 32
+    },
+    "text": {
+      "diamond": "It lives in arid places. Instead of perspiration, it expels grainy sand from its body.",
+      "pearl": "It enshrouds itself with sand to protect itself from germs. It does not enjoy getting wet."
+    },
+    "types": [
+      "ground"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/449.png"
+  },
+  {
+    "sinnoh": 123,
+    "national": 450,
+    "slug": "hippowdon",
+    "name": "Hippowdon",
+    "genus": "Heavyweight Pokémon",
+    "height": 2.0,
+    "weight": 300.0,
+    "catch_rate": 60,
+    "stats": {
+      "hp": 108,
+      "attack": 112,
+      "defense": 118,
+      "special-attack": 68,
+      "special-defense": 72,
+      "speed": 47
+    },
+    "text": {
+      "diamond": "It blasts internally stored sand from ports on its body to create a towering twister for attack.",
+      "pearl": "Its huge mouth is almost seven feet across. It has enough power to completely crush a car."
+    },
+    "types": [
+      "ground"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/450.png"
+  },
+  {
+    "sinnoh": 124,
+    "national": 298,
+    "slug": "azurill",
+    "name": "Azurill",
+    "genus": "Polka Dot Pokémon",
+    "height": 0.2,
+    "weight": 2.0,
+    "catch_rate": 150,
+    "stats": {
+      "hp": 50,
+      "attack": 20,
+      "defense": 40,
+      "special-attack": 20,
+      "special-defense": 40,
+      "speed": 20
+    },
+    "text": {
+      "diamond": "A Pokémon that lives by water. It moves quickly on land by bouncing on its big tail.",
+      "pearl": "Its tail is filled with nutrients necessary for growth. It plays by bouncing on its tail."
+    },
+    "types": [
+      "normal"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/298.png"
+  },
+  {
+    "sinnoh": 125,
+    "national": 183,
+    "slug": "marill",
+    "name": "Marill",
+    "genus": "Aqua Mouse Pokémon",
+    "height": 0.4,
+    "weight": 8.5,
+    "catch_rate": 190,
+    "stats": {
+      "hp": 70,
+      "attack": 20,
+      "defense": 50,
+      "special-attack": 20,
+      "special-defense": 50,
+      "speed": 40
+    },
+    "text": {
+      "diamond": "Using its tail as a float, it dives underwater. It likes eating plants that grow on river bottoms.",
+      "pearl": "The tip of its tail is filled with oil that is lighter than water, so it acts as a float."
+    },
+    "types": [
+      "water"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/183.png"
+  },
+  {
+    "sinnoh": 126,
+    "national": 184,
+    "slug": "azumarill",
+    "name": "Azumarill",
+    "genus": "Aqua Rabbit Pokémon",
+    "height": 0.8,
+    "weight": 28.5,
+    "catch_rate": 75,
+    "stats": {
+      "hp": 100,
+      "attack": 50,
+      "defense": 80,
+      "special-attack": 50,
+      "special-defense": 80,
+      "speed": 50
+    },
+    "text": {
+      "diamond": "It lives in rivers and lakes. In water, its coloring and patterns trick the vision of foes.",
+      "pearl": "Its long ears are superb sensors. It can distinguish the movements of living things on riverbeds."
+    },
+    "types": [
+      "water"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/184.png"
+  },
+  {
+    "sinnoh": 127,
+    "national": 451,
+    "slug": "skorupi",
+    "name": "Skorupi",
+    "genus": "Scorpion Pokémon",
+    "height": 0.8,
+    "weight": 12.0,
+    "catch_rate": 120,
+    "stats": {
+      "hp": 40,
+      "attack": 50,
+      "defense": 90,
+      "special-attack": 30,
+      "special-defense": 55,
+      "speed": 65
+    },
+    "text": {
+      "diamond": "It grips prey with its tail claws and injects poison. It tenaciously hangs on until the poison takes.",
+      "pearl": "It lives in arid lands. It buries itself in sand and lies in wait for unsuspecting prey."
+    },
+    "types": [
+      "poison",
+      "bug"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/451.png"
+  },
+  {
+    "sinnoh": 128,
+    "national": 452,
+    "slug": "drapion",
+    "name": "Drapion",
+    "genus": "Ogre Scorpion Pokémon",
+    "height": 1.3,
+    "weight": 61.5,
+    "catch_rate": 45,
+    "stats": {
+      "hp": 70,
+      "attack": 90,
+      "defense": 110,
+      "special-attack": 60,
+      "special-defense": 75,
+      "speed": 95
+    },
+    "text": {
+      "diamond": "It has the power in its clawed arms to make scrap of a car. The tips of its claws release poison.",
+      "pearl": "Its body is encased in a sturdy shell. Its head rotates 180 degrees, eliminating blind spots."
+    },
+    "types": [
+      "poison",
+      "dark"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/452.png"
+  },
+  {
+    "sinnoh": 129,
+    "national": 453,
+    "slug": "croagunk",
+    "name": "Croagunk",
+    "genus": "Toxic Mouth Pokémon",
+    "height": 0.7,
+    "weight": 23.0,
+    "catch_rate": 140,
+    "stats": {
+      "hp": 48,
+      "attack": 61,
+      "defense": 40,
+      "special-attack": 61,
+      "special-defense": 40,
+      "speed": 50
+    },
+    "text": {
+      "diamond": "Its cheeks hold poison sacs. It tries to catch foes off guard to jab them with toxic fingers.",
+      "pearl": "Inflating its poison sacs, it makes an eerie blubbering sound for intimidation."
+    },
+    "types": [
+      "poison",
+      "fighting"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/453.png"
+  },
+  {
+    "sinnoh": 130,
+    "national": 454,
+    "slug": "toxicroak",
+    "name": "Toxicroak",
+    "genus": "Toxic Mouth Pokémon",
+    "height": 1.3,
+    "weight": 44.4,
+    "catch_rate": 75,
+    "stats": {
+      "hp": 83,
+      "attack": 106,
+      "defense": 65,
+      "special-attack": 86,
+      "special-defense": 65,
+      "speed": 85
+    },
+    "text": {
+      "diamond": "Its knuckle claws secrete a toxin so vile that even a scratch could prove fatal.",
+      "pearl": "The toxin made in its poison sacs is pumped to the knuckle claws through tubes down its arms."
+    },
+    "types": [
+      "poison",
+      "fighting"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/454.png"
+  },
+  {
+    "sinnoh": 131,
+    "national": 455,
+    "slug": "carnivine",
+    "name": "Carnivine",
+    "genus": "Bug Catcher Pokémon",
+    "height": 1.4,
+    "weight": 27.0,
+    "catch_rate": 200,
+    "stats": {
+      "hp": 74,
+      "attack": 100,
+      "defense": 72,
+      "special-attack": 90,
+      "special-defense": 72,
+      "speed": 46
+    },
+    "text": {
+      "diamond": "It attracts prey with its sweet- smelling saliva, then chomps down. It takes a whole day to eat prey.",
+      "pearl": "Hanging from branches using its tentacles, it looks like a plant. It awaits prey, mouth wide open."
+    },
+    "types": [
+      "grass"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/455.png"
+  },
+  {
+    "sinnoh": 132,
+    "national": 223,
+    "slug": "remoraid",
+    "name": "Remoraid",
+    "genus": "Jet Pokémon",
+    "height": 0.6,
+    "weight": 12.0,
+    "catch_rate": 190,
+    "stats": {
+      "hp": 35,
+      "attack": 65,
+      "defense": 35,
+      "special-attack": 65,
+      "special-defense": 35,
+      "speed": 65
+    },
+    "text": {
+      "diamond": "It squirts water forcefully from its mouth to shoot down flying prey.",
+      "pearl": "It clings to MANTINE to feed on the big Pokémon’s scraps. This is an adaptation to avoid foes."
+    },
+    "types": [
+      "water"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/223.png"
+  },
+  {
+    "sinnoh": 133,
+    "national": 224,
+    "slug": "octillery",
+    "name": "Octillery",
+    "genus": "Jet Pokémon",
+    "height": 0.9,
+    "weight": 28.5,
+    "catch_rate": 75,
+    "stats": {
+      "hp": 75,
+      "attack": 105,
+      "defense": 75,
+      "special-attack": 105,
+      "special-defense": 75,
+      "speed": 45
+    },
+    "text": {
+      "diamond": "It lives in the gaps of boulders and in holes on the seafloor. Its suction cups grip prey tightly.",
+      "pearl": "It obscures its foe’s vision by spitting a cloud of murky ink. It makes its nest among boulders."
+    },
+    "types": [
+      "water"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/224.png"
+  },
+  {
+    "sinnoh": 134,
+    "national": 456,
+    "slug": "finneon",
+    "name": "Finneon",
+    "genus": "Wing Fish Pokémon",
+    "height": 0.4,
+    "weight": 7.0,
+    "catch_rate": 190,
+    "stats": {
+      "hp": 49,
+      "attack": 49,
+      "defense": 56,
+      "special-attack": 49,
+      "special-defense": 61,
+      "speed": 66
+    },
+    "text": {
+      "diamond": "After long exposure to sunlight, the patterns on its tail fins shine vividly when darkness arrives.",
+      "pearl": "The way its two tail fins flutter while it swims has earned it the nickname “BEAUTIFLY of the Sea.”"
+    },
+    "types": [
+      "water"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/456.png"
+  },
+  {
+    "sinnoh": 135,
+    "national": 457,
+    "slug": "lumineon",
+    "name": "Lumineon",
+    "genus": "Neon Pokémon",
+    "height": 1.2,
+    "weight": 24.0,
+    "catch_rate": 75,
+    "stats": {
+      "hp": 69,
+      "attack": 69,
+      "defense": 76,
+      "special-attack": 69,
+      "special-defense": 86,
+      "speed": 91
+    },
+    "text": {
+      "diamond": "It lives on the deep-sea floor. It attracts prey by flashing the patterns on its four tail fins.",
+      "pearl": "To avoid detection by predators, it crawls along the seafloor using the two fins on its chest."
+    },
+    "types": [
+      "water"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/457.png"
+  },
+  {
+    "sinnoh": 136,
+    "national": 72,
+    "slug": "tentacool",
+    "name": "Tentacool",
+    "genus": "Jellyfish Pokémon",
+    "height": 0.9,
+    "weight": 45.5,
+    "catch_rate": 190,
+    "stats": {
+      "hp": 40,
+      "attack": 40,
+      "defense": 35,
+      "special-attack": 50,
+      "special-defense": 100,
+      "speed": 70
+    },
+    "text": {
+      "diamond": "Its body is virtually composed of water. It shoots strange beams from its crystal-like eyes.",
+      "pearl": "It drifts in sea currents. Countless fishermen are hurt by its poison stingers."
+    },
+    "types": [
+      "water",
+      "poison"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/72.png"
+  },
+  {
+    "sinnoh": 137,
+    "national": 73,
+    "slug": "tentacruel",
+    "name": "Tentacruel",
+    "genus": "Jellyfish Pokémon",
+    "height": 1.6,
+    "weight": 55.0,
+    "catch_rate": 60,
+    "stats": {
+      "hp": 80,
+      "attack": 70,
+      "defense": 65,
+      "special-attack": 80,
+      "special-defense": 120,
+      "speed": 100
+    },
+    "text": {
+      "diamond": "With 80 tentacles for ensnaring victims, it prevents escape until the prey is weakened by poison.",
+      "pearl": "It alerts others to danger by stridently flashing the red orbs on its head."
+    },
+    "types": [
+      "water",
+      "poison"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/73.png"
+  },
+  {
+    "sinnoh": 138,
+    "national": 349,
+    "slug": "feebas",
+    "name": "Feebas",
+    "genus": "Fish Pokémon",
+    "height": 0.6,
+    "weight": 7.4,
+    "catch_rate": 255,
+    "stats": {
+      "hp": 20,
+      "attack": 15,
+      "defense": 20,
+      "special-attack": 10,
+      "special-defense": 55,
+      "speed": 80
+    },
+    "text": {
+      "diamond": "It is famous for its shabby appearance. While populous, they tend to cluster in set locations.",
+      "pearl": "It eats anything, so it can even live in polluted streams and lakes. No one pays any attention to it."
+    },
+    "types": [
+      "water"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/349.png"
+  },
+  {
+    "sinnoh": 139,
+    "national": 350,
+    "slug": "milotic",
+    "name": "Milotic",
+    "genus": "Tender Pokémon",
+    "height": 6.2,
+    "weight": 162.0,
+    "catch_rate": 60,
+    "stats": {
+      "hp": 95,
+      "attack": 60,
+      "defense": 79,
+      "special-attack": 100,
+      "special-defense": 125,
+      "speed": 81
+    },
+    "text": {
+      "diamond": "When people bicker, it is said to arise from the depths of lakes to becalm violent hearts.",
+      "pearl": "It is the world’s most beautiful Pokémon. There are many works of art featuring MILOTIC."
+    },
+    "types": [
+      "water"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/350.png"
+  },
+  {
+    "sinnoh": 140,
+    "national": 458,
+    "slug": "mantyke",
+    "name": "Mantyke",
+    "genus": "Kite Pokémon",
+    "height": 1.0,
+    "weight": 65.0,
+    "catch_rate": 25,
+    "stats": {
+      "hp": 45,
+      "attack": 20,
+      "defense": 50,
+      "special-attack": 60,
+      "special-defense": 120,
+      "speed": 50
+    },
+    "text": {
+      "diamond": "A friendly Pokémon that captures the subtle flows of seawater using its two antennae.",
+      "pearl": "Scientists discovered that the distinctive patterns on its back differ by region."
+    },
+    "types": [
+      "water",
+      "flying"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/458.png"
+  },
+  {
+    "sinnoh": 141,
+    "national": 226,
+    "slug": "mantine",
+    "name": "Mantine",
+    "genus": "Kite Pokémon",
+    "height": 2.1,
+    "weight": 220.0,
+    "catch_rate": 25,
+    "stats": {
+      "hp": 65,
+      "attack": 40,
+      "defense": 70,
+      "special-attack": 80,
+      "special-defense": 140,
+      "speed": 70
+    },
+    "text": {
+      "diamond": "When the waves are calm, one may encounter a swarm of MANTINE swimming as if they are in flight.",
+      "pearl": "It swims elegantly, mindless of REMORAID hitching on to its broad fins. It has a docile nature."
+    },
+    "types": [
+      "water",
+      "flying"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/226.png"
+  },
+  {
+    "sinnoh": 142,
+    "national": 459,
+    "slug": "snover",
+    "name": "Snover",
+    "genus": "Frost Tree Pokémon",
+    "height": 1.0,
+    "weight": 50.5,
+    "catch_rate": 120,
+    "stats": {
+      "hp": 60,
+      "attack": 62,
+      "defense": 50,
+      "special-attack": 62,
+      "special-defense": 60,
+      "speed": 40
+    },
+    "text": {
+      "diamond": "It lives on snowy mountains. Having had little contact with humans, it is boldly inquisitive.",
+      "pearl": "In the spring, it grows berries with the texture of frozen treats around its belly."
+    },
+    "types": [
+      "grass",
+      "ice"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/459.png"
+  },
+  {
+    "sinnoh": 143,
+    "national": 460,
+    "slug": "abomasnow",
+    "name": "Abomasnow",
+    "genus": "Frost Tree Pokémon",
+    "height": 2.2,
+    "weight": 135.5,
+    "catch_rate": 60,
+    "stats": {
+      "hp": 90,
+      "attack": 92,
+      "defense": 75,
+      "special-attack": 92,
+      "special-defense": 85,
+      "speed": 60
+    },
+    "text": {
+      "diamond": "It whips up blizzards in mountains that are always buried in snow. It is the abominable snowman.",
+      "pearl": "It blankets wide areas in snow by whipping up blizzards. It is also known as “The Ice Monster.”"
+    },
+    "types": [
+      "grass",
+      "ice"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/460.png"
+  },
+  {
+    "sinnoh": 144,
+    "national": 215,
+    "slug": "sneasel",
+    "name": "Sneasel",
+    "genus": "Sharp Claw Pokémon",
+    "height": 0.9,
+    "weight": 28.0,
+    "catch_rate": 60,
+    "stats": {
+      "hp": 55,
+      "attack": 95,
+      "defense": 55,
+      "special-attack": 35,
+      "special-defense": 75,
+      "speed": 115
+    },
+    "text": {
+      "diamond": "It feeds on eggs stolen from nests. Its sharply hooked claws rip vulnerable spots on prey.",
+      "pearl": "It is extremely vicious and will not stop attacking until its foe is incapable of moving."
+    },
+    "types": [
+      "dark",
+      "ice"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/215.png"
+  },
+  {
+    "sinnoh": 145,
+    "national": 461,
+    "slug": "weavile",
+    "name": "Weavile",
+    "genus": "Sharp Claw Pokémon",
+    "height": 1.1,
+    "weight": 34.0,
+    "catch_rate": 45,
+    "stats": {
+      "hp": 70,
+      "attack": 120,
+      "defense": 65,
+      "special-attack": 45,
+      "special-defense": 85,
+      "speed": 125
+    },
+    "text": {
+      "diamond": "They live in cold regions, forming groups of four or five that hunt prey with impressive coordination.",
+      "pearl": "It sends signals to others by carving odd patterns in frost- covered trees and ice."
+    },
+    "types": [
+      "dark",
+      "ice"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/461.png"
+  },
+  {
+    "sinnoh": 146,
+    "national": 480,
+    "slug": "uxie",
+    "name": "Uxie",
+    "genus": "Knowledge Pokémon",
+    "height": 0.3,
+    "weight": 0.3,
+    "catch_rate": 3,
+    "stats": {
+      "hp": 75,
+      "attack": 75,
+      "defense": 130,
+      "special-attack": 75,
+      "special-defense": 130,
+      "speed": 95
+    },
+    "text": {
+      "diamond": "Known as “The Being of Knowledge.” It is said that it can wipe out the memory of those who see its eyes.",
+      "pearl": "It is said that its emergence gave humans the intelligence to improve their quality of life."
+    },
+    "types": [
+      "psychic"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/480.png"
+  },
+  {
+    "sinnoh": 147,
+    "national": 481,
+    "slug": "mesprit",
+    "name": "Mesprit",
+    "genus": "Emotion Pokémon",
+    "height": 0.3,
+    "weight": 0.3,
+    "catch_rate": 3,
+    "stats": {
+      "hp": 80,
+      "attack": 105,
+      "defense": 105,
+      "special-attack": 105,
+      "special-defense": 105,
+      "speed": 80
+    },
+    "text": {
+      "diamond": "Known as “The Being of Emotion.” It taught humans the nobility of sorrow, pain, and joy.",
+      "pearl": "It sleeps at the bottom of a lake. Its spirit is said to leave its body to fly on the lake’s surface."
+    },
+    "types": [
+      "psychic"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/481.png"
+  },
+  {
+    "sinnoh": 148,
+    "national": 482,
+    "slug": "azelf",
+    "name": "Azelf",
+    "genus": "Willpower Pokémon",
+    "height": 0.3,
+    "weight": 0.3,
+    "catch_rate": 3,
+    "stats": {
+      "hp": 75,
+      "attack": 125,
+      "defense": 70,
+      "special-attack": 125,
+      "special-defense": 70,
+      "speed": 115
+    },
+    "text": {
+      "diamond": "Known as “The Being of Willpower.” It sleeps at the bottom of a lake to keep the world in balance.",
+      "pearl": "It is thought that UXIE, MESPRIT and AZELF all came from the same egg."
+    },
+    "types": [
+      "psychic"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/482.png"
+  },
+  {
+    "sinnoh": 149,
+    "national": 483,
+    "slug": "dialga",
+    "name": "Dialga",
+    "genus": "Temporal Pokémon",
+    "height": 5.4,
+    "weight": 683.0,
+    "catch_rate": 3,
+    "stats": {
+      "hp": 100,
+      "attack": 120,
+      "defense": 120,
+      "special-attack": 150,
+      "special-defense": 100,
+      "speed": 90
+    },
+    "text": {
+      "diamond": "It has the power to control time. It appears in Sinnoh-region myths as an ancient deity.",
+      "pearl": "A Pokémon spoken of in legend. It is said that time began moving when DIALGA was born."
+    },
+    "types": [
+      "steel",
+      "dragon"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/483.png"
+  },
+  {
+    "sinnoh": 150,
+    "national": 484,
+    "slug": "palkia",
+    "name": "Palkia",
+    "genus": "Spatial Pokémon",
+    "height": 4.2,
+    "weight": 336.0,
+    "catch_rate": 3,
+    "stats": {
+      "hp": 90,
+      "attack": 120,
+      "defense": 100,
+      "special-attack": 150,
+      "special-defense": 120,
+      "speed": 100
+    },
+    "text": {
+      "diamond": "It has the ability to distort space. It is described as a deity in Sinnoh-region mythology.",
+      "pearl": "It is said to live in a gap in the spatial dimension parallel to ours. It appears in mythology."
+    },
+    "types": [
+      "water",
+      "dragon"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/484.png"
+  },
+  {
+    "sinnoh": 151,
+    "national": 490,
+    "slug": "manaphy",
+    "name": "Manaphy",
+    "genus": "Seafaring Pokémon",
+    "height": 0.3,
+    "weight": 1.4,
+    "catch_rate": 3,
+    "stats": {
+      "hp": 100,
+      "attack": 100,
+      "defense": 100,
+      "special-attack": 100,
+      "special-defense": 100,
+      "speed": 100
+    },
+    "text": {
+      "diamond": "Born on a cold seafloor, it will swim great distances to return to its birthplace.",
+      "pearl": "Water makes up 80% of its body. This Pokémon is easily affected by its environment."
+    },
+    "types": [
+      "water"
+    ],
+    "sprite_source": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/diamond-pearl/490.png"
+  }
+]

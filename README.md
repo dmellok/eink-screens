@@ -31,6 +31,11 @@ because the Sticky's reader firmware reads BMP while the dashboard firmwares rea
 
 ## What's here
 
+**New: [Diamond/Pearl Sinnoh Pokédex](Pokédex/diamond-pearl/README.md)** — 151
+regional entries with original Gen IV pixel sprites, both Diamond and Pearl
+descriptions, and a new monochrome layout for X3, X4, reTerminal Sticky, and Kindle.
+Includes source assets and an offline Python renderer.
+
 | Folder | Contents |
 | --- | --- |
 | [`Pokédex/x4`](Pokédex/x4) | All 151 original Kanto Pokémon as 480×800 data-sheet screens for the X4 |
@@ -331,7 +336,9 @@ the multi-pass grayscale refresh is not running correctly — see
 - 8-bit greyscale PNG, no dithering applied — these panels have 16 levels and handle greyscale
   themselves. The Kobo Libra Colour and Kobo Clara Colour sets are RGB PNG.
 
-Both are rendered from live [Tesserae](https://github.com/dmellok) canvases.
+The original sets are rendered from live [Tesserae](https://github.com/dmellok)
+canvases. The [Diamond/Pearl set](Pokédex/diamond-pearl/README.md) includes its
+own offline Pillow renderer and cached source assets.
 
 ### Sources
 

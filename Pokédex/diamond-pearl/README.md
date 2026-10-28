@@ -11,7 +11,9 @@ National numbers, category, Gen IV typing and base stats, height, weight, catch
 rate, and separate English Diamond and Pearl descriptions. The sprite is scaled
 by an integer with nearest-neighbor sampling. No smoothing or dithering is applied
 to the sprite pixels. The white background and simple rules keep the plate clear
-on small monochrome displays.
+on small monochrome displays. The retro Pokédex shell echoes the original Kanto
+set with a lens and status lamps, a recessed sprite screen, rounded double-line
+windows, offset shadows, and a Game Boy-style dialogue frame.
 
 ## Ready-to-use files
 

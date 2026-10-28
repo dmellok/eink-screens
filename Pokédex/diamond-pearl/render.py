@@ -81,26 +81,41 @@ def render(p, width, height, four=False):
                 return
         raise ValueError(f'Text does not fit: {p["name"]}: {content}')
 
-    # A restrained DS instrument shell: navigation band, specimen display, data.
-    box(12, 12, 456, 776, outline=0, line=2, radius=12)
-    box(12, 12, 456, 50, fill=0, radius=10)
-    box(12, 40, 456, 22, fill=0)
-    draw.ellipse([xy(28, 25), xy(52, 49)], outline=255, width=max(1, round(2 * scale)))
-    draw.ellipse([xy(35, 32), xy(45, 42)], fill=255)
-    text(66, 28, 'SINNOH', 22, True, 255)
-    text(450, 30, 'DIAMOND / PEARL', 13, True, 255, 'rt')
-    text(28, 78, f'No. {p["sinnoh"]:03}', 19, True)
-    text(452, 81, f'NATIONAL {p["national"]:03}', 14, True, anchor='rt')
+    def circle(x, y, diameter, fill, outline=0, line=1):
+        draw.ellipse([xy(x, y), xy(x + diameter, y + diameter)], fill=fill,
+                     outline=outline, width=max(1, round(line * scale)))
 
-    # Quiet corner marks frame the sprite without a dithered background.
-    for x, direction in ((28, 1), (452, -1)):
-        for y, vertical in ((110, 1), (308, -1)):
-            draw.line([xy(x + direction * 12, y), xy(x, y), xy(x, y + vertical * 12)],
-                      fill=170, width=max(1, round(scale)))
+    def panel(x, y, w, h, radius=7):
+        # Offset black edge and inner keyline recall the handheld game's windows.
+        box(x + 3, y + 3, w, h, fill=0, radius=radius)
+        box(x, y, w, h, fill=255, line=2, radius=radius)
+        box(x + 4, y + 4, w - 8, h - 8, outline=170, radius=max(1, radius - 3))
+
+    # Pokédex hardware: lens, status lamps, stepped seam and recessed LCD.
+    box(8, 8, 464, 784, fill=255, line=2, radius=14)
+    circle(22, 20, 44, 255, line=2)
+    circle(28, 26, 32, 0)
+    circle(33, 30, 11, 255, outline=255)
+    circle(49, 47, 4, 170, outline=170)
+    for i, shade in enumerate((0, 170, 255)):
+        circle(78 + i * 17, 24, 9, shade)
+    text(451, 22, 'POKEDEX', 24, True, anchor='rt')
+    text(451, 49, 'SINNOH / DIAMOND + PEARL', 11, True, anchor='rt')
+    draw.line([xy(9, 69), xy(113, 69), xy(126, 62), xy(167, 62)],
+              fill=0, width=max(1, round(2 * scale)))
+    box(22, 78, 436, 306, fill=85, outline=0, line=2, radius=12)
+    box(29, 85, 422, 278, fill=255, outline=0, line=2, radius=7)
+    box(34, 90, 412, 268, outline=170, radius=4)
+    text(43, 98, f'No. {p["sinnoh"]:03}', 16, True)
+    text(437, 100, f'NAT. {p["national"]:03}', 13, True, anchor='rt')
+    circle(38, 371, 6, 255, outline=255)
+    for i in range(4):
+        box(364 + i * 19, 373, 14, 2, fill=255, outline=255)
+
     sprite = Image.open(ROOT / 'assets/sprites' / f'{p["national"]:03}.png').convert('RGBA')
     sprite = sprite.crop(sprite.getbbox())
     # Maximize within the display while preserving the original sprite grid.
-    zoom = max(1, int(min(340 * scale / sprite.width, 190 * scale / sprite.height)))
+    zoom = max(1, int(min(340 * scale / sprite.width, 178 * scale / sprite.height)))
     sprite = sprite.resize((sprite.width * zoom, sprite.height * zoom), Image.Resampling.NEAREST)
     white = Image.new('RGBA', sprite.size, 'white')
     white.alpha_composite(sprite)
@@ -108,46 +123,55 @@ def render(p, width, height, four=False):
     if four:
         # Nearest-neighbor scaling preserves flat clusters; no diffusion noise.
         grey = grey.point(lambda v: round(v / 85) * 85)
-    cx, cy = xy(240, 209)
+    cx, cy = xy(240, 210)
     im.paste(grey, (cx - grey.width // 2, cy - grey.height // 2))
     name_size = 28
-    while draw.textlength(p['name'].upper(), font=font(name_size, True)) > 420 * scale:
+    while draw.textlength(p['name'].upper(), font=font(name_size, True)) > 394 * scale:
         name_size -= 1
-    text(240, 317, p['name'].upper(), name_size, True, anchor='mt')
-    text(240, 350, p['genus'], 17, anchor='mt')
+    text(240, 307, p['name'].upper(), name_size, True, anchor='mt')
+    text(240, 340, p['genus'], 17, anchor='mt')
     types = p['types']
     badge_width = 112
     start = 240 - (len(types) * badge_width + (len(types) - 1) * 8) / 2
     for i, kind in enumerate(types):
         x = start + i * 120
-        box(x, 376, badge_width, 25, fill=0, radius=3)
-        text(x + badge_width / 2, 382, kind.upper(), 13, True, 255, 'mt')
+        box(x + 2, 394, badge_width, 25, fill=170, outline=170, radius=5)
+        box(x, 392, badge_width, 25, fill=0, radius=5)
+        text(x + badge_width / 2, 398, kind.upper(), 13, True, 255, 'mt')
 
-    rule(416)
-    text(28, 430, 'BASE STATS', 14, True)
-    text(452, 432, f'TOTAL {sum(p["stats"][k] for k, _ in STAT_NAMES)}', 14, anchor='rt')
+    panel(22, 430, 436, 133)
+    text(34, 441, 'BASE STATS', 14, True)
+    text(444, 441, f'TOTAL {sum(p["stats"][k] for k, _ in STAT_NAMES)}', 14, True, anchor='rt')
+    rule(460, 34, 446)
     for i, (key, label) in enumerate(STAT_NAMES):
-        y = 456 + 17 * i
+        y = 468 + 14 * i
         val = p['stats'][key]
-        text(28, y, label, 13)
+        text(34, y, label, 12)
         for seg in range(15):
-            box(112 + seg * 19, y + 2, 15, 9, fill=0 if seg < round(val / 255 * 15) else 255)
-        text(452, y - 1, str(val), 15, anchor='rt')
-    rule(566)
+            box(120 + seg * 18, y + 2, 14, 7,
+                fill=0 if seg < round(val / 255 * 15) else 255)
+        text(444, y - 1, str(val), 14, anchor='rt')
+
     for i, (label, value) in enumerate((('HEIGHT', f'{p["height"]:g} m'),
                                         ('WEIGHT', f'{p["weight"]:g} kg'),
-                                        ('CATCH RATE', str(p['catch_rate'])))):
-        x = 28 + 144 * i
-        text(x, 578, label, 12, True)
-        text(x, 596, value, 21)
-    rule(626)
-    for version, y, mark in (('diamond', 640, 'D'), ('pearl', 702, 'P')):
-        box(28, y, 22, 22, fill=0, radius=3)
-        text(39, y + 4, mark, 13, True, 255, 'mt')
-        paragraph(p['text'][version], 62, y - 1, 386, 55, 17)
-    rule(764)
-    text(28, 774, 'GEN IV / 2006', 10, True)
-    text(452, 773, f'SINNOH {p["sinnoh"]:03} / 151', 12, anchor='rt')
+                                        ('CATCH', str(p['catch_rate'])))):
+        x = 22 + 148 * i
+        panel(x, 575, 140, 49, radius=6)
+        text(x + 70, 583, label, 11, True, anchor='mt')
+        text(x + 70, 600, value, 19, anchor='mt')
+
+    panel(22, 637, 436, 128)
+    # A white-backed legend interrupts the border like a Game Boy dialogue box.
+    box(33, 631, 132, 14, fill=255, outline=255)
+    text(38, 632, 'DEX ENTRIES', 12, True)
+    for version, y, mark in (('diamond', 650, 'D'), ('pearl', 706, 'P')):
+        box(34, y, 21, 21, fill=0, radius=4)
+        text(44.5, y + 4, mark, 13, True, 255, 'mt')
+        paragraph(p['text'][version], 64, y, 378, 51, 17)
+    # Small navigation chevron is a game UI detail, outside the description area.
+    draw.polygon([xy(438, 756), xy(444, 756), xy(441, 760)], fill=0)
+    text(24, 777, 'GEN IV / 2006', 10, True)
+    text(456, 777, f'SINNOH {p["sinnoh"]:03} / 151', 10, True, anchor='rt')
     if four:
         # Antialiased text also lands on exact native panel states.
         im = im.point(lambda v: round(v / 85) * 85)

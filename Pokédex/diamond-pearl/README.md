@@ -4,7 +4,7 @@
 Manaphy. This is the original regional roster, rather than Platinum's expanded
 210-entry roster or the 493-entry National Pokédex.
 
-![Six sample plates](preview.png)
+![Six light-theme sample plates](preview-light.png)
 
 Each plate includes the original Diamond/Pearl pixel sprite, both regional and
 National numbers, category, Gen IV typing and base stats, height, weight, catch
@@ -17,24 +17,25 @@ windows, offset shadows, and a Game Boy-style dialogue frame.
 
 ## Ready-to-use files
 
-| Folder | Native size | Format |
-| --- | --- | --- |
-| [x4](x4) | 480 × 800 | Native four-grey, 4-bit BMP |
-| [x3](x3) | 528 × 792 | Native four-grey, 4-bit BMP |
-| [reterminal-sticky](reterminal-sticky) | 480 × 800 | Four-grey PNG |
-| [kindle-6in](kindle-6in) | 600 × 800 | Greyscale PNG |
-| [kindle-pw2](kindle-pw2) | 758 × 1024 | Greyscale PNG |
-| [kindle-pw3](kindle-pw3) | 1072 × 1448 | Greyscale PNG |
-| [kindle-pw](kindle-pw) | 1236 × 1648 | Greyscale PNG |
-| [kindle-oasis-pw12](kindle-oasis-pw12) | 1264 × 1680 | Greyscale PNG |
-| [kindle-scribe](kindle-scribe) | 1860 × 2480 | Greyscale PNG |
+Choose a device, then a shell theme. Both themes keep the sprite and data windows
+white. Both shells have a subtle two-shade plastic texture. **Dark** uses a
+darker shell with a fully black surround outside the rounded Pokédex outline.
+Both use rounded frames and offset shadows.
 
-Filenames begin with the **Sinnoh** number: `001-turtwig.bmp` is National #387.
-The X4 BMPs also work for the upright reTerminal Sticky's BMP reader firmware.
-Installation follows the device instructions in the [main README](../../README.md#installing-on-the-device).
+| Device | Native size | Light shell | Dark shell | Format |
+| --- | --- | --- | --- | --- |
+| X4 | 480 × 800 | [x4/light](x4/light) | [x4/dark](x4/dark) | Native four-grey, 4-bit BMP |
+| X3 | 528 × 792 | [x3/light](x3/light) | [x3/dark](x3/dark) | Native four-grey, 4-bit BMP |
+
+![Dark shell and black surround preview](preview-dark.png)
+
+Filenames begin with the **Sinnoh** number: `x4/dark/001-turtwig.bmp` is
+National #387. Copy the 151 BMP files from one device/theme folder to the reader's
+`/sleep/` folder. The X4 BMPs also work for the upright reTerminal Sticky's BMP
+reader firmware. Installation follows the device instructions in the
+[main README](../../README.md#installing-on-the-device).
 These exports have been checked in software; physical device appearance is not
-yet verified. The larger panels use the same information layout, with text and
-rules drawn at native resolution and sprites enlarged in whole-pixel steps.
+yet verified. Only X3 and X4 sets are exported.
 
 ## Rebuild offline
 
@@ -46,10 +47,11 @@ python3 'Pokédex/diamond-pearl/render.py'
 python3 'Pokédex/diamond-pearl/verify.py'
 ```
 
-To render only selected devices or regional entries:
+The renderer writes `diamond-pearl/{x3,x4}/{light,dark}/*.bmp`. To render only
+selected devices, themes, or regional entries:
 
 ```sh
-python3 'Pokédex/diamond-pearl/render.py' --devices x4 x3 --numbers 1 4 7
+python3 'Pokédex/diamond-pearl/render.py' --devices x4 x3 --themes light dark --numbers 1 4 7
 ```
 
 `data.json`, the source sprites, and both fonts are stored locally, so rendering

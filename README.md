@@ -33,7 +33,7 @@ because the Sticky's reader firmware reads BMP while the dashboard firmwares rea
 
 **New: [Diamond/Pearl Sinnoh Pokédex](Pokédex/diamond-pearl/README.md)** — 151
 regional entries with original Gen IV pixel sprites, both Diamond and Pearl
-descriptions, and a new monochrome layout for X3, X4, reTerminal Sticky, and Kindle.
+descriptions, and retro light/dark shell layouts for X3 and X4.
 Includes source assets and an offline Python renderer.
 
 | Folder | Contents |

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Render offline Gen IV plates. Requires Pillow; no network used."""
 import argparse
+from functools import lru_cache
 import json
 from pathlib import Path
 import struct
@@ -10,11 +11,9 @@ from PIL import Image, ImageDraw, ImageFont
 ROOT = Path(__file__).resolve().parent
 DEVICES = {
     'x4': (480, 800, 'bmp'), 'x3': (528, 792, 'bmp'),
-    'reterminal-sticky': (480, 800, 'png4'),
-    'kindle-6in': (600, 800, 'png'), 'kindle-pw2': (758, 1024, 'png'),
-    'kindle-pw3': (1072, 1448, 'png'), 'kindle-pw': (1236, 1648, 'png'),
-    'kindle-oasis-pw12': (1264, 1680, 'png'), 'kindle-scribe': (1860, 2480, 'png'),
 }
+
+THEMES = ('light', 'dark')
 STAT_NAMES = [('hp', 'HP'), ('attack', 'ATTACK'), ('defense', 'DEFENSE'),
               ('special-attack', 'SP. ATK'), ('special-defense', 'SP. DEF'), ('speed', 'SPEED')]
 
@@ -37,17 +36,22 @@ def bmp4(image, path):
     path.write_bytes(header + info + palette + body)
 
 
-def render(p, width, height, four=False):
+def render(p, width, height, four=False, theme='light'):
+    if theme not in THEMES:
+        raise ValueError(f'Unknown theme: {theme}')
+    dark = theme == 'dark'
+    ink = 255 if dark else 0
     # Draw text and rules at native resolution; sprites always use integer zoom.
     scale = min(width / 480, height / 800)
     left = (width - 480 * scale) / 2
     top = (height - 800 * scale) / 2
-    im = Image.new('L', (width, height), 255)
+    im = Image.new('L', (width, height), 0 if dark else 255)
     draw = ImageDraw.Draw(im)
 
     def xy(x, y):
         return round(left + x * scale), round(top + y * scale)
 
+    @lru_cache(maxsize=None)
     def font(size, pixel=False):
         name = 'Silkscreen-Regular.ttf' if pixel else 'ShareTechMono-Regular.ttf'
         return ImageFont.truetype(str(ROOT / 'assets/fonts' / name), round(size * scale))
@@ -87,23 +91,38 @@ def render(p, width, height, four=False):
 
     def panel(x, y, w, h, radius=7):
         # Offset black edge and inner keyline recall the handheld game's windows.
-        box(x + 3, y + 3, w, h, fill=0, radius=radius)
+        box(x + 4, y + 4, w, h, fill=0 if dark else 85, radius=radius)
+        box(x + 2, y + 2, w, h, fill=0, radius=radius)
         box(x, y, w, h, fill=255, line=2, radius=radius)
         box(x + 4, y + 4, w - 8, h - 8, outline=170, radius=max(1, radius - 3))
 
     # Pokédex hardware: lens, status lamps, stepped seam and recessed LCD.
-    box(8, 8, 464, 784, fill=255, line=2, radius=14)
-    circle(22, 20, 44, 255, line=2)
+    # The texture stays inside the device; dark has a solid black surround.
+    # Build at the 480x800 design size so the pattern scales with the hardware.
+    shell = Image.new('L', (480, 800), 85 if dark else 255)
+    texture = ImageDraw.Draw(shell)
+    for y in range(12, 788, 6):
+        for x in range(12 + (3 if y % 12 else 0), 468, 6):
+            texture.point((x, y), fill=0 if dark else 170)
+    shell = shell.resize((round(480 * scale), round(800 * scale)), Image.Resampling.NEAREST)
+    mask = Image.new('L', im.size, 0)
+    ImageDraw.Draw(mask).rounded_rectangle([xy(8, 8), xy(472, 792)],
+                                          radius=round(14 * scale), fill=255)
+    layer = Image.new('L', im.size, 255)
+    layer.paste(shell, xy(0, 0))
+    im.paste(layer, (0, 0), mask)
+    box(8, 8, 464, 784, line=2, radius=14)
+    circle(22, 20, 44, 255, outline=ink, line=2)
     circle(28, 26, 32, 0)
     circle(33, 30, 11, 255, outline=255)
     circle(49, 47, 4, 170, outline=170)
     for i, shade in enumerate((0, 170, 255)):
-        circle(78 + i * 17, 24, 9, shade)
-    text(451, 22, 'POKEDEX', 24, True, anchor='rt')
-    text(451, 49, 'SINNOH / DIAMOND + PEARL', 11, True, anchor='rt')
+        circle(78 + i * 17, 24, 9, shade, outline=ink)
+    text(451, 22, 'POKEDEX', 24, True, ink, anchor='rt')
+    text(451, 49, 'SINNOH / DIAMOND + PEARL', 11, True, ink, anchor='rt')
     draw.line([xy(9, 69), xy(113, 69), xy(126, 62), xy(167, 62)],
-              fill=0, width=max(1, round(2 * scale)))
-    box(22, 78, 436, 306, fill=85, outline=0, line=2, radius=12)
+              fill=ink, width=max(1, round(2 * scale)))
+    box(22, 78, 436, 306, fill=0 if dark else 85, outline=170 if dark else 0, line=2, radius=12)
     box(29, 85, 422, 278, fill=255, outline=0, line=2, radius=7)
     box(34, 90, 412, 268, outline=170, radius=4)
     text(43, 98, f'No. {p["sinnoh"]:03}', 16, True)
@@ -170,8 +189,8 @@ def render(p, width, height, four=False):
         paragraph(p['text'][version], 64, y, 378, 51, 17)
     # Small navigation chevron is a game UI detail, outside the description area.
     draw.polygon([xy(438, 756), xy(444, 756), xy(441, 760)], fill=0)
-    text(24, 777, 'GEN IV / 2006', 10, True)
-    text(456, 777, f'SINNOH {p["sinnoh"]:03} / 151', 10, True, anchor='rt')
+    text(24, 777, 'GEN IV / 2006', 10, True, ink)
+    text(456, 777, f'SINNOH {p["sinnoh"]:03} / 151', 10, True, ink, anchor='rt')
     if four:
         # Antialiased text also lands on exact native panel states.
         im = im.point(lambda v: round(v / 85) * 85)
@@ -181,30 +200,33 @@ def render(p, width, height, four=False):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--devices', nargs='+', choices=DEVICES, default=list(DEVICES))
+    parser.add_argument('--themes', nargs='+', choices=THEMES, default=list(THEMES))
     parser.add_argument('--numbers', nargs='+', type=int, help='Sinnoh numbers, default all 151')
     args = parser.parse_args()
     entries = json.loads((ROOT / 'data.json').read_text())
-    for device in args.devices:
-        w, h, fmt = DEVICES[device]
-        folder = ROOT / device
-        folder.mkdir(exist_ok=True)
-        for p in entries:
-            if args.numbers and p['sinnoh'] not in args.numbers:
-                continue
-            plate = render(p, w, h, fmt in ('bmp', 'png4'))
-            path = folder / f'{p["sinnoh"]:03}-{p["slug"]}.{"bmp" if fmt == "bmp" else "png"}'
-            if fmt == 'bmp':
-                bmp4(plate, path)
-            else:
-                plate.save(path, optimize=True)
-        print(f'Rendered {device}: {w} x {h}', flush=True)
+    for theme in args.themes:
+        for device in args.devices:
+            w, h, fmt = DEVICES[device]
+            folder = ROOT / device / theme
+            folder.mkdir(parents=True, exist_ok=True)
+            for p in entries:
+                if args.numbers and p['sinnoh'] not in args.numbers:
+                    continue
+                plate = render(p, w, h, fmt in ('bmp', 'png4'), theme)
+                path = folder / f'{p["sinnoh"]:03}-{p["slug"]}.{"bmp" if fmt == "bmp" else "png"}'
+                if fmt == 'bmp':
+                    bmp4(plate, path)
+                else:
+                    plate.save(path, optimize=True)
+            print(f'Rendered {theme}/{device}: {w} x {h}', flush=True)
     # Preview uses the actual X4 rendering, including four-level quantization.
     picks = [1, 4, 7, 66, 149, 150]
-    preview = Image.new('RGB', (480 * 3 + 24 * 4, 800 * 2 + 24 * 3), '#dedede')
-    for i, number in enumerate(picks):
-        preview.paste(render(entries[number - 1], 480, 800, True),
-                      (24 + (i % 3) * 504, 24 + (i // 3) * 824))
-    preview.save(ROOT / 'preview.png', optimize=True)
+    for theme in args.themes:
+        preview = Image.new('RGB', (480 * 3 + 24 * 4, 800 * 2 + 24 * 3), '#dedede')
+        for i, number in enumerate(picks):
+            preview.paste(render(entries[number - 1], 480, 800, True, theme),
+                          (24 + (i % 3) * 504, 24 + (i // 3) * 824))
+        preview.save(ROOT / f'preview-{theme}.png', optimize=True)
 
 
 if __name__ == '__main__':

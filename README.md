@@ -35,6 +35,7 @@ because the Sticky's reader firmware reads BMP while the dashboard firmwares rea
 regional entries with original Gen IV pixel sprites, both Diamond and Pearl
 descriptions, and retro light/dark shell layouts for X3 and X4.
 Includes source assets and an offline Python renderer.
+Contributed by [d-r-e](https://github.com/d-r-e).
 
 | Folder | Contents |
 | --- | --- |
@@ -50,6 +51,7 @@ Includes source assets and an offline Python renderer.
 | [`Pokédex/kindle-pw3-zh`](Pokédex/kindle-pw3-zh) | 1072×1448 **in Simplified Chinese** for the 3rd-gen Paperwhite (see below) |
 | [`Pokédex/kindle-pw5-zh-hant`](Pokédex/kindle-pw5-zh-hant) | 1236×1648 **in Traditional Chinese** for the 11th-gen Paperwhite (see below) |
 | [`Pokédex/kindle-6in`](Pokédex/kindle-6in) | 600×800, reduced layout for small 6" panels (see below) |
+| [`Pokédex/diamond-pearl`](Pokédex/diamond-pearl) | 151 Diamond/Pearl Sinnoh Pokémon as X4 and X3 plates in light and dark shells, by [d-r-e](https://github.com/d-r-e) |
 | [`Constellations/x4`](Constellations/x4) | All 88 IAU constellations as 480×800 star-chart plates for the X4 |
 | [`Constellations/x3`](Constellations/x3) | The same 88 plates at 528×792 for the X3 |
 | [`Magic/x4`](Magic/x4) | 104 iconic Magic: The Gathering cards as 480×800 card facsimiles for the X4 |
